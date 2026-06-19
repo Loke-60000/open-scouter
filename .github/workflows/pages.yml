@@ -26,6 +26,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true   # create the Pages site if it does not exist yet
       - uses: actions/jekyll-build-pages@v1
         with:
           source: ./docs

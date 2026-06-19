@@ -1,0 +1,26 @@
+FROM vllm/vllm-openai:latest
+
+WORKDIR /app
+
+COPY third_party/vLLM-Hook /app/third_party/vLLM-Hook
+RUN pip install --no-cache-dir -e /app/third_party/vLLM-Hook/vllm_hook_plugins
+
+COPY pyproject.toml README.md ./
+COPY src ./src
+RUN pip install --no-cache-dir -e . --no-deps \
+    && pip install --no-cache-dir fastapi "uvicorn[standard]" pydantic pydantic-settings \
+        sse-starlette huggingface_hub httpx
+
+ENV SCOUTER_BACKEND=vllm \
+    SCOUTER_HOST=0.0.0.0 \
+    SCOUTER_PORT=8000 \
+    SCOUTER_VLLM_HOOK_WORKER=steer_hook_act \
+    VLLM_USE_V1=1 \
+    VLLM_WORKER_MULTIPROC_METHOD=spawn \
+    HF_HOME=/data/hf
+
+VOLUME ["/data"]
+EXPOSE 8000
+
+ENTRYPOINT []
+CMD ["scouter"]

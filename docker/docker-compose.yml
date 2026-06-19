@@ -1,0 +1,28 @@
+services:
+  vllm:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.vllm
+    image: open-scouter:latest
+    ports:
+      - "8000:8000"
+    volumes:
+      - axes:/data
+    environment:
+      SCOUTER_MODEL: ${SCOUTER_MODEL:-Qwen/Qwen3-0.6B}
+      SCOUTER_SERVED_MODEL_NAME: scouter
+      # Axis: local .pt/.npy/.npz path or "hf:<model-key>" from the precomputed dataset.
+      SCOUTER_AXIS: ${SCOUTER_AXIS:-}
+      SCOUTER_VLLM_HOOK_WORKER: ${SCOUTER_VLLM_HOOK_WORKER:-steer_hook_act}
+      SCOUTER_GPU_MEMORY_UTILIZATION: "0.90"
+      SCOUTER_MONITOR_ENABLED: "true"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+volumes:
+  axes:

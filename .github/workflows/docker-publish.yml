@@ -1,0 +1,88 @@
+name: build-and-publish-image
+
+# Builds the vLLM backend image and publishes it to the GitHub Container
+# Registry (GHCR) so it can be pulled directly:
+#
+#   docker pull ghcr.io/<owner>/open-scouter:latest
+#
+# No secrets to configure - the built-in GITHUB_TOKEN authenticates to GHCR.
+
+on:
+  push:
+    branches: [master]
+    tags: ["v*"]
+    paths-ignore:
+      - "**/*.md"
+      - "docs/**"
+  pull_request:
+    # On PRs we build (to catch breakage) but do not push.
+    paths-ignore:
+      - "**/*.md"
+      - "docs/**"
+  workflow_dispatch:
+
+concurrency:
+  group: image-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  build-vllm:
+    runs-on: ubuntu-latest
+    steps:
+      # The vLLM base image is large; reclaim runner disk before building.
+      - name: Free disk space
+        run: |
+          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc \
+                      /opt/hostedtoolcache/CodeQL /usr/local/share/boost || true
+          sudo docker image prune -af || true
+          df -h /
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # The image consumes the vLLM-Hook plugin from its submodule. Pull just
+      # that one (shallow) - assistant-axis isn't needed inside the image.
+      - name: Init vLLM-Hook submodule
+        run: git submodule update --init --depth 1 third_party/vLLM-Hook
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to GHCR
+        if: github.event_name != 'pull_request'
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Compute image metadata
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          # metadata-action lowercases the image name automatically.
+          images: ghcr.io/${{ github.repository_owner }}/open-scouter
+          tags: |
+            type=raw,value=latest,enable={{is_default_branch}}
+            type=ref,event=branch
+            type=ref,event=pr
+            type=semver,pattern={{version}}
+            type=semver,pattern={{major}}.{{minor}}
+            type=sha,format=short
+
+      - name: Build and push
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: docker/Dockerfile.vllm
+          platforms: linux/amd64
+          push: ${{ github.event_name != 'pull_request' }}
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          provenance: false
+          cache-from: type=gha,scope=vllm
+          cache-to: type=gha,mode=max,scope=vllm

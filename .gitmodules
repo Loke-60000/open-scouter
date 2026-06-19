@@ -1,0 +1,8 @@
+[submodule "third_party/assistant-axis"]
+	path = third_party/assistant-axis
+	url = https://github.com/safety-research/assistant-axis
+	shallow = true
+[submodule "third_party/vLLM-Hook"]
+	path = third_party/vLLM-Hook
+	url = https://github.com/IBM/vLLM-Hook
+	shallow = true

@@ -1,0 +1,1883 @@
+[
+  {
+    "name": "afraid",
+    "scenarios": [
+      "She pulls the blanket up to her chin and stares at the closet door.",
+      "His hands tremble as he checks the lock for the third time.",
+      "They step back from the edge of the roof, breathing fast.",
+      "He flinches when a branch taps the window in the dark.",
+      "She keeps her eyes fixed on the shadow under the bed.",
+      "His voice drops to a whisper when he hears footsteps in the hall."
+    ]
+  },
+  {
+    "name": "alarmed",
+    "scenarios": [
+      "He jerks upright in his chair, coffee sloshing onto his hand.",
+      "She snatches her phone and dials without looking at the screen.",
+      "They freeze mid-step, eyes wide, as the alarm blares.",
+      "He shoves the door open and scans the room frantically.",
+      "She grabs his arm and pulls him back from the curb.",
+      "His breath catches when he sees the smoke curling under the door."
+    ]
+  },
+  {
+    "name": "alert",
+    "scenarios": [
+      "She cocks her head, listening to a faint noise outside.",
+      "He scans the crowd slowly, cataloging every face.",
+      "Their eyes dart from mirror to mirror as they drive.",
+      "She keeps one hand on her bag and watches the stranger approach.",
+      "He straightens up and focuses on the distant siren.",
+      "They pause mid-bite, ears tuned to the rustle in the bushes."
+    ]
+  },
+  {
+    "name": "amazed",
+    "scenarios": [
+      "She stares at the shooting star, mouth slightly open.",
+      "He shakes his head slowly, running his fingers over the ancient artifact.",
+      "They whisper 'wow' and lean closer to the glass case.",
+      "She blinks several times at the perfect rainbow arcing over the falls.",
+      "He traces the intricate carving with a fingertip, not speaking.",
+      "They stand frozen, watching the fireworks bloom silently overhead."
+    ]
+  },
+  {
+    "name": "amused",
+    "scenarios": [
+      "He bites his lip and looks down at his shoes, shoulders shaking.",
+      "She raises an eyebrow and gives a slow, crooked smile.",
+      "They exchange a quick glance and then both look away, grinning.",
+      "He leans back in his chair, tapping his fingers in a little rhythm.",
+      "She covers her mouth and lets out a soft snort.",
+      "He winks and tilts his head, waiting for her to catch the joke."
+    ]
+  },
+  {
+    "name": "angry",
+    "scenarios": [
+      "He slams the drawer shut and kicks the chair out of his way.",
+      "She clenches her jaw and grips the edge of the table until her knuckles go white.",
+      "They throw the report across the room without reading the last page.",
+      "He jabs a finger at the screen and speaks through gritted teeth.",
+      "She stomps up the stairs, each step a sharp, heavy thud.",
+      "He rips the paper in half and drops the pieces on the floor."
+    ]
+  },
+  {
+    "name": "annoyed",
+    "scenarios": [
+      "She taps her pen repeatedly against the desk, exhaling sharply through her nose.",
+      "He rolls his eyes and mutters under his breath as the same song loops for the tenth time.",
+      "She slams the fridge door shut after finding the empty milk carton left inside.",
+      "He rubs his temples and clenches his jaw when the phone rings yet again.",
+      "She crosses her arms and stares at the ceiling, refusing to respond to the question.",
+      "He types with aggressive force, deleting and retyping the same line three times."
+    ]
+  },
+  {
+    "name": "anxious",
+    "scenarios": [
+      "She chews her bottom lip raw while glancing at the clock every few seconds.",
+      "He paces back and forth, wringing his hands and stopping to check his phone again.",
+      "She twists a strand of hair so tightly that it pulls at her scalp.",
+      "He repeatedly cracks his knuckles and shifts his weight from foot to foot.",
+      "She picks at the skin around her thumb until a small bead of blood appears.",
+      "He stares at the closed door, his breath coming in short, shallow gasps."
+    ]
+  },
+  {
+    "name": "aroused",
+    "scenarios": [
+      "She leans in close, her breath warm against his neck as she speaks softly.",
+      "He lets his gaze trail slowly down her body, then meets her eyes with a slow smile.",
+      "She traces a finger along his arm, lingering just a moment too long.",
+      "He brushes a strand of hair from her face, his thumb gently grazing her cheek.",
+      "She bites her lower lip and holds his stare, her pupils widening slightly.",
+      "He presses his palm flat against the small of her back, pulling her nearer."
+    ]
+  },
+  {
+    "name": "ashamed",
+    "scenarios": [
+      "He stares at the floor, his shoulders hunched and his hands shoved deep into his pockets.",
+      "She covers her face with both hands and shakes her head slowly.",
+      "He mumbles an apology without lifting his gaze from the table.",
+      "She pulls her sweater tighter around herself, as if trying to disappear into it.",
+      "He avoids eye contact and speaks in a voice barely above a whisper.",
+      "She shrinks back in her chair, her cheeks burning and her eyes fixed on her lap."
+    ]
+  },
+  {
+    "name": "astonished",
+    "scenarios": [
+      "She drops the spoon she was holding, and it clatters loudly on the tile floor.",
+      "He blinks several times, his mouth falling open as he stares at the scene.",
+      "She lets out a gasp and presses both hands to her cheeks, eyes wide.",
+      "He freezes mid-step, his coffee cup hovering inches from his lips.",
+      "She shakes her head slowly, as if trying to clear a hallucination from her vision.",
+      "He leans forward, squinting, then lets out a low, breathless whistle."
+    ]
+  },
+  {
+    "name": "at_ease",
+    "scenarios": [
+      "He sinks into the armchair, letting his head fall back and his shoulders drop.",
+      "She stretches her legs out on the sofa and closes her eyes with a soft sigh.",
+      "He rests his chin on his folded hands, a small, content smile on his lips.",
+      "She leans against the railing, watching the sunset with relaxed, steady breaths.",
+      "He hums quietly while stirring his tea, his movements slow and unhurried.",
+      "She curls up in the corner of the couch, her breathing deep and even."
+    ]
+  },
+  {
+    "name": "awestruck",
+    "scenarios": [
+      "She stands frozen, her mouth slightly open, staring at the Milky Way stretching across the desert sky.",
+      "He slowly lowers his camera, unable to look away from the ancient temple carved into the cliff face.",
+      "The child's eyes widen as the fireworks burst directly overhead, each color reflected in her pupils.",
+      "They press their palms flat against the glass of the aquarium tank, watching a whale glide past.",
+      "He whispers 'I can't believe this is real' while gazing at the Grand Canyon from the rim.",
+      "She takes a step back, her hand covering her heart, as the orchestra's final chord fades into silence."
+    ]
+  },
+  {
+    "name": "bewildered",
+    "scenarios": [
+      "He blinks rapidly at the spreadsheet, then turns it upside down as if that might help.",
+      "She looks from the recipe to the flour-covered counter and back again, her eyebrows knitting together.",
+      "They stand in the empty parking lot, checking their phone map and then spinning in a slow circle.",
+      "He picks up the unlabeled key, tries it in every lock on the door, then just stares at the doorknob.",
+      "She reads the same sentence of the instruction manual three times, then closes the booklet and sighs.",
+      "They watch the magician pull a rabbit from a hat, then check behind the hat and under the table."
+    ]
+  },
+  {
+    "name": "bitter",
+    "scenarios": [
+      "She sets down the congratulatory card without opening it, and turns away from the party noise.",
+      "He watches his ex-laughing with someone new, then slowly crumples the napkin in his fist.",
+      "They mutter 'must be nice' under their breath as a coworker receives the promotion they wanted.",
+      "She unties the ribbon on the gift, barely glances inside, and places it on the far corner of her desk.",
+      "He scrolls past the vacation photos on social media, then puts his phone face-down on the table.",
+      "They listen to the award speech, arms crossed, and let out a single, quiet snort."
+    ]
+  },
+  {
+    "name": "blissful",
+    "scenarios": [
+      "She sinks into the warm bath, closes her eyes, and lets her head rest against the edge of the tub.",
+      "He lies on the grass with his eyes shut, feeling the sun on his face and a light breeze on his skin.",
+      "They hold their newborn against their chest, breathing slowly, their lips curved in a soft smile.",
+      "She sips the hot chocolate, wraps both hands around the mug, and lets out a contented sigh.",
+      "He stretches out in the hammock, a book open on his stomach, not reading, just swaying gently.",
+      "They walk barefoot on the beach at sunset, the waves just reaching their toes with each step."
+    ]
+  },
+  {
+    "name": "bored",
+    "scenarios": [
+      "She props her chin on her hand and slowly traces the grain of the wooden desk with one finger.",
+      "He checks his watch, then looks at the clock on the wall, then checks his watch again.",
+      "They flip through the same magazine for the fifth time, not reading any of the articles.",
+      "She counts the ceiling tiles, then counts them again in the opposite direction.",
+      "He lets out a long, quiet yawn and rests his head on the back of the chair, staring at nothing.",
+      "They tap their pencil on the table in a slow, irregular rhythm, then just let it roll away."
+    ]
+  },
+  {
+    "name": "brooding",
+    "scenarios": [
+      "He sits alone in the dark corner of the caf\u00e9, staring into his untouched coffee, his jaw tight.",
+      "She stands at the window, arms crossed, watching the rain streak down the glass without blinking.",
+      "They lean against the railing of the balcony, shoulders hunched, eyes fixed on the distant hills.",
+      "He paces the length of the room slowly, then stops to press his palms flat against the wall.",
+      "She sits on the edge of the bed, head bowed, fingers laced together and resting on her knees.",
+      "They stare at the extinguished candle, its wick still smoking, and do not move to relight it."
+    ]
+  },
+  {
+    "name": "calm",
+    "scenarios": [
+      "She takes a slow sip of tea as the chaos swirls around her.",
+      "He rests his hands on the steering wheel, breathing evenly at the red light.",
+      "The child lies on the grass, watching clouds drift without a single fidget.",
+      "She closes her eyes and lets the waves wash over her bare feet.",
+      "He folds his hands on the desk and waits for the clock to tick down.",
+      "The cat stretches on the windowsill, blinking slowly in the afternoon sun."
+    ]
+  },
+  {
+    "name": "cheerful",
+    "scenarios": [
+      "He hums a tune while skipping over cracks in the sidewalk.",
+      "She greets every passerby with a wave and a wide grin.",
+      "The child spins in circles until she giggles and stumbles.",
+      "He tosses a handful of confetti into the air just because.",
+      "She bounces on her heels as she hands out cookies to strangers.",
+      "He breaks into a little dance when his favorite song starts playing."
+    ]
+  },
+  {
+    "name": "compassionate",
+    "scenarios": [
+      "She kneels to help the stranger pick up scattered groceries.",
+      "He places a blanket over the shivering man on the bench.",
+      "She gently wipes the child's tears and whispers softly.",
+      "He offers his seat to the elderly woman without a word.",
+      "She listens to her friend's troubles without glancing at her phone.",
+      "He brings soup to the neighbor who just lost his dog."
+    ]
+  },
+  {
+    "name": "contemptuous",
+    "scenarios": [
+      "He looks down his nose at the mismatched socks on the man's feet.",
+      "She snorts and turns away when the waiter mispronounces the dish.",
+      "He flicks a piece of lint off his sleeve as if it were dirt.",
+      "She curls her lip at the cheap wine someone offered her.",
+      "He lets out a slow, deliberate sigh when the amateur performance begins.",
+      "She pushes the plate aside without a word, leaving the meal untouched."
+    ]
+  },
+  {
+    "name": "content",
+    "scenarios": [
+      "She sinks into the old armchair with a satisfied sigh.",
+      "He watches the sunset from the porch, not moving an inch.",
+      "She curls up with a book and a cup of tea, fully still.",
+      "He leans back on the park bench, eyes half-closed in the warmth.",
+      "She strokes the cat's fur slowly, a small smile on her lips.",
+      "He stretches out on the couch and stays there for hours."
+    ]
+  },
+  {
+    "name": "defiant",
+    "scenarios": [
+      "He stares straight ahead as the crowd boos him off the stage.",
+      "She crosses her arms and refuses to step aside for the guard.",
+      "He raises his chin and meets the principal's glare without flinching.",
+      "She tears up the letter and drops it at the officer's feet.",
+      "He stands alone in the empty field, facing the approaching storm.",
+      "She keeps walking forward even as the sirens grow louder."
+    ]
+  },
+  {
+    "name": "delighted",
+    "scenarios": [
+      "She spins in a circle, arms wide, as the confetti rains down.",
+      "He clutches the letter to his chest and lets out a long, breathy laugh.",
+      "They bounce on their heels, clapping their hands together with a sharp, joyful slap.",
+      "Her eyes crinkle at the corners as she lifts the golden trophy above her head.",
+      "He hums a cheerful tune while skipping over every crack in the sidewalk.",
+      "She throws her head back and lets the warm sun soak into her upturned face."
+    ]
+  },
+  {
+    "name": "dependent",
+    "scenarios": [
+      "He waits by the door every evening, checking the clock every few minutes until she arrives.",
+      "She calls him three times in an hour just to ask what he thinks she should wear.",
+      "He won't order his own meal until his friend nods at the menu choice.",
+      "She clutches his sleeve as they cross the street, even though there are no cars.",
+      "He repeats her instructions under his breath, unable to make a single decision alone.",
+      "She stares at the blank page, then turns helplessly to her coworker for the first sentence."
+    ]
+  },
+  {
+    "name": "depressed",
+    "scenarios": [
+      "He stares at the ceiling from his bed, not moving even as the sunlight shifts across the wall.",
+      "She picks at the crust of her sandwich, then pushes the plate away untouched.",
+      "He lets the phone ring and ring, never reaching out to pick it up.",
+      "She wears the same gray sweater for the fourth day in a row, not bothering to change.",
+      "He sits in the dark room, the curtains drawn, watching dust motes float in a sliver of light.",
+      "She turns her face to the wall when someone knocks, and stays perfectly still."
+    ]
+  },
+  {
+    "name": "desperate",
+    "scenarios": [
+      "He rifled through every drawer, then upended the trash can, searching for the lost key.",
+      "She grabs the stranger's arm and begs, 'Please, just tell me you've seen my dog.'",
+      "He bangs on the locked door with both fists, his breath coming in ragged gasps.",
+      "She scrolls through her phone, refreshing the same page every two seconds, her jaw tight.",
+      "He shouts into the dark street, his voice cracking as he calls a name over and over.",
+      "She digs her nails into her palm, willing the bus to arrive before her legs give out."
+    ]
+  },
+  {
+    "name": "disdainful",
+    "scenarios": [
+      "He lifts one eyebrow and slowly looks the worn shoes up and down before turning away.",
+      "She lets the poorly printed menu drop from her fingers onto the table with a soft thud.",
+      "He sniffs once, then deliberately steps around the puddle as if it were a pile of filth.",
+      "She speaks to the waiter without meeting his eyes, her words clipped and flat.",
+      "He examines the hand-drawn card, then sets it aside without a word of thanks.",
+      "She crosses her arms and tilts her chin up, letting a long silence answer the suggestion."
+    ]
+  },
+  {
+    "name": "disgusted",
+    "scenarios": [
+      "She recoils, her hand flying to cover her mouth as she backs away from the counter.",
+      "He wrinkles his nose and blinks rapidly, turning his whole body away from the smell.",
+      "She drops the spoon as if it burned her, shaking her fingers out with a shudder.",
+      "He stares at the squirming thing on his plate, then pushes the entire dish away.",
+      "She gags audibly, one hand pressing against her stomach, the other waving for air.",
+      "He scrapes his tongue with his teeth, then spits into a napkin with a grimace."
+    ]
+  },
+  {
+    "name": "disoriented",
+    "scenarios": [
+      "She blinks rapidly, scanning the room as if seeing it for the first time.",
+      "He walks in circles, muttering that the hallway looks different today.",
+      "They pause mid-step, one hand pressed to the wall, unsure which way is forward.",
+      "She stares at the menu, then at the cashier, then back at the menu without speaking.",
+      "He checks his watch, then his phone, then his watch again, frowning deeply.",
+      "They turn left where the street should be, only to find a dead end."
+    ]
+  },
+  {
+    "name": "dispirited",
+    "scenarios": [
+      "He stares at the blank page, then slowly lays his pen down.",
+      "She finishes her coffee, but doesn't bother to lift her gaze from the table.",
+      "They shuffle through the door, dropping their bag without looking at anyone.",
+      "He pulls the covers over his head, letting the alarm ring until it stops.",
+      "She picks at her sandwich, pushing it around the plate without taking a bite.",
+      "They sit on the bench, watching the game but not reacting to the score."
+    ]
+  },
+  {
+    "name": "distressed",
+    "scenarios": [
+      "She paces the kitchen, her hands trembling as she dials the phone again.",
+      "He presses both palms against his temples, rocking slightly in his chair.",
+      "They clutch the edge of the table, their knuckles white and breathing shallow.",
+      "She pulls at her hair, whispering the same number over and over.",
+      "He checks the door three times in a minute, then checks the window.",
+      "They bite their lip until it bleeds, eyes fixed on the clock."
+    ]
+  },
+  {
+    "name": "disturbed",
+    "scenarios": [
+      "He stares at the photograph, then slowly turns it face down on the desk.",
+      "She wipes her hands on her jeans repeatedly after touching the old book.",
+      "They step back from the screen, one hand covering their mouth.",
+      "He shakes his head slowly, then looks away from the conversation.",
+      "She pulls her sleeve down to avoid brushing against the railing.",
+      "They close the drawer with a sharp shove and step away from it."
+    ]
+  },
+  {
+    "name": "docile",
+    "scenarios": [
+      "She nods at every instruction without a single question.",
+      "He sits exactly where he is told, hands folded in his lap.",
+      "They wait without fidgeting, eyes down, until someone speaks to them.",
+      "She follows the group without looking left or right.",
+      "He accepts the offered food without any reaction, eating quietly.",
+      "They let others take their turn without a word, stepping back each time."
+    ]
+  },
+  {
+    "name": "droopy",
+    "scenarios": [
+      "His eyelids keep closing, jerking open only when his chin dips.",
+      "She leans her head against the window, her whole body sagging sideways.",
+      "He lets his arms hang loose, shoulders slumped, head tilted forward.",
+      "They walk with slow, heavy steps, each foot barely lifting from the ground.",
+      "She rests her chin on her palm, her cheek squished and eyes half-closed.",
+      "He sits with his back curved, the newspaper slowly drooping toward his lap."
+    ]
+  },
+  {
+    "name": "dumbstruck",
+    "scenarios": [
+      "She stands frozen, mouth slightly open, staring at the empty stage where the magician vanished.",
+      "He blinks repeatedly, unable to form a single word after hearing the surprise verdict.",
+      "The child\u2019s eyes are wide, and she doesn\u2019t move as the fireworks bloom silently overhead.",
+      "He holds the letter with trembling hands, his lips parted but no sound escaping.",
+      "She just stares at the painting, not blinking, as if the colors have stolen her breath.",
+      "He slowly shakes his head, still speechless, while the crowd around him cheers wildly."
+    ]
+  },
+  {
+    "name": "eager",
+    "scenarios": [
+      "She leans forward in her chair, hands gripping the edge, watching the door for the delivery driver.",
+      "He bounces lightly on his heels, glancing at the clock every few seconds before the bell rings.",
+      "She flips through the cookbook pages faster than she can read, already reaching for the mixing bowl.",
+      "He checks his phone repeatedly, thumb hovering over the message icon before the response arrives.",
+      "She opens her mouth mid-sentence, ready to answer before the teacher finishes the question.",
+      "He sits on the edge of his seat, eyes fixed on the starting line, fingers drumming on his knees."
+    ]
+  },
+  {
+    "name": "ecstatic",
+    "scenarios": [
+      "She throws her arms wide and spins in the rain, laughing as the drops soak her hair.",
+      "He jumps up from the couch, pumping both fists in the air, then hugs the nearest person.",
+      "She claps her hands over her mouth, then squeals and runs to the window, waving at the car below.",
+      "He lifts his friend off the ground in a bear hug, spinning them both around the crowded room.",
+      "She dances in place, feet shuffling, arms waving, while tears stream down her smiling face.",
+      "He shouts a wordless cry and falls to his knees, pressing both palms to the grass."
+    ]
+  },
+  {
+    "name": "elated",
+    "scenarios": [
+      "She hums softly while stirring her tea, a small smile playing on her lips as she looks out the window.",
+      "He walks with a light, almost skipping step, nodding to strangers as he passes them on the street.",
+      "She traces the gold lettering on the diploma, then sets it gently on the shelf, exhaling a slow, happy breath.",
+      "He leans back in his chair, arms behind his head, gazing at the ceiling with a satisfied grin.",
+      "She texts a single emoji to her friend, then hugs her phone to her chest, eyes bright.",
+      "He sits on the bench, eyes closed, face tilted to the sun, a soft, steady smile on his lips."
+    ]
+  },
+  {
+    "name": "embarrassed",
+    "scenarios": [
+      "He pulls his collar up and stares at his shoes, cheeks burning as laughter ripples behind him.",
+      "She hides her face behind both hands, peeking through her fingers at the spilled drink on the table.",
+      "He clears his throat and looks away, rubbing the back of his neck while mumbling an apology.",
+      "She tucks a strand of hair behind her ear, eyes fixed on the floor, as the room goes quiet.",
+      "He lets out a forced laugh, then quickly turns and busies himself with straightening a stack of papers.",
+      "She shrinks into her chair, pulling her sleeves over her hands, and stares at the blank wall."
+    ]
+  },
+  {
+    "name": "empathetic",
+    "scenarios": [
+      "She kneels beside the crying child, placing a gentle hand on his back without saying a word.",
+      "He listens with his head tilted, nodding slowly, his eyes soft and fixed on the speaker\u2019s face.",
+      "She hands a tissue to the stranger on the bench, then sits down quietly beside them.",
+      "He places a warm cup of tea in front of his friend, then pulls up a chair and waits.",
+      "She mirrors the other person\u2019s frown, her brow furrowed, as she leans in closer to hear.",
+      "He reaches across the table and lightly touches the other person\u2019s wrist, his expression calm and open."
+    ]
+  },
+  {
+    "name": "energized",
+    "scenarios": [
+      "She bounds up the stairs two at a time, her backpack bouncing with each step.",
+      "He cracks his knuckles and dives into the morning pile of emails with a grin.",
+      "After the cold shower, she jogs in place while waiting for the coffee to brew.",
+      "He pumps his fist as the alarm clock rings, leaping out of bed before it stops.",
+      "She spins in her office chair, then jumps up to pace the room while brainstorming.",
+      "He sprints to catch the bus even though it\u2019s still half a block away and he has plenty of time."
+    ]
+  },
+  {
+    "name": "enraged",
+    "scenarios": [
+      "His jaw tightens as he silently crumples the letter into a tight ball.",
+      "She slams the phone onto the receiver, cracking the plastic casing.",
+      "He grips the steering wheel until his knuckles turn white, not saying a word.",
+      "She kicks the trash can across the garage, scattering papers everywhere.",
+      "He throws his pencil across the room, then shoves the desk with a loud scrape.",
+      "Her face flushes deep red as she clenches her fists at her sides."
+    ]
+  },
+  {
+    "name": "enthusiastic",
+    "scenarios": [
+      "He leans forward in his chair, nodding rapidly as the presenter speaks.",
+      "She claps her hands together and bounces on her heels before starting the project.",
+      "He interrupts his own story to add more details, waving his hands excitedly.",
+      "She arrives twenty minutes early to the workshop, notebook already open.",
+      "He volunteers to take notes, then fills three pages before the first break.",
+      "She texts her friend a string of emojis and exclamation points about the upcoming trip."
+    ]
+  },
+  {
+    "name": "envious",
+    "scenarios": [
+      "She glances at her colleague\u2019s promotion letter, then quickly looks down at her own desk.",
+      "He scrolls through vacation photos on social media, his thumb pausing on each one.",
+      "She smiles tightly while her friend shows off the new car, her eyes lingering on the keys.",
+      "He watches the winning athlete hug the trophy, then adjusts his own silver medal.",
+      "She compliments her neighbor\u2019s garden but keeps her hands shoved in her pockets.",
+      "He listens to his brother\u2019s travel stories, nodding slowly with a forced smile."
+    ]
+  },
+  {
+    "name": "euphoric",
+    "scenarios": [
+      "She throws her arms wide and spins in the middle of the empty park.",
+      "He laughs uncontrollably, tears streaming down his face, unable to speak.",
+      "She jumps up and down, hugging everyone within arm\u2019s reach, including a stranger.",
+      "He stares at the test results, then lets out a long, shaky breath before grinning.",
+      "She closes her eyes and sways to the music, a soft smile spreading across her face.",
+      "He lifts his hands above his head and shouts into the wind on the mountaintop."
+    ]
+  },
+  {
+    "name": "exasperated",
+    "scenarios": [
+      "She lets out a long, slow sigh and rubs her temples with both hands.",
+      "He drops his head onto the desk and stays there, motionless, for ten seconds.",
+      "She repeats the instructions for the third time, each word slower and flatter.",
+      "He stares at the error message on the screen, then pushes his chair back and walks away.",
+      "She picks up the spilled bowl of cereal, sets it on the counter, and just shakes her head.",
+      "He holds up the broken remote, raises an eyebrow at the cat, and says nothing."
+    ]
+  },
+  {
+    "name": "excited",
+    "scenarios": [
+      "She bounces on her toes, clapping her hands together as the door swings open.",
+      "He keeps glancing at the clock, then back at the gift-wrapped box on the table.",
+      "Her voice climbs higher with each word, and she can\u2019t stop grinning.",
+      "He drums his fingers on the steering wheel, humming off-key to the radio.",
+      "She flips through the brochure again, even though she\u2019s already memorized every page.",
+      "He jumps up from his chair, nearly knocking it over, and races toward the ringing phone."
+    ]
+  },
+  {
+    "name": "exuberant",
+    "scenarios": [
+      "He throws both arms wide and spins in a circle, laughing at nothing in particular.",
+      "She bounds across the lawn, leaping over a bench just for the joy of it.",
+      "He scoops up a handful of confetti and tosses it into the air, watching it rain down on everyone.",
+      "She grabs her friend\u2019s hands and pulls them into an impromptu dance in the middle of the street.",
+      "He shouts a cheer so loud that passersby turn and smile at his energy.",
+      "She hugs three people in a row, then twirls away to hug another."
+    ]
+  },
+  {
+    "name": "frightened",
+    "scenarios": [
+      "He freezes mid-step, his breath catching as a shadow shifts in the corner.",
+      "She presses herself flat against the wall, one hand clamped over her mouth.",
+      "His eyes dart around the dark room, and he takes a slow, silent step backward.",
+      "She flinches at the sudden knock, her knuckles white where she grips the doorframe.",
+      "He pulls the blanket up to his chin, staring wide-eyed at the barely-open closet door.",
+      "She hears a creak on the stairs and holds perfectly still, not even blinking."
+    ]
+  },
+  {
+    "name": "frustrated",
+    "scenarios": [
+      "He slams the keyboard drawer shut and rubs his temples with both hands.",
+      "She stares at the tangled thread, then drops the needle with a sharp sigh.",
+      "He reads the same line of the instruction manual three times and crumples the page.",
+      "She jabs the elevator button repeatedly, even though it\u2019s already lit up.",
+      "He kicks the flat tire and lets out a long, guttural groan.",
+      "She snaps the ruler in half and tosses the pieces onto the cluttered desk."
+    ]
+  },
+  {
+    "name": "fulfilled",
+    "scenarios": [
+      "She leans back in her chair, gazing at the finished painting with a slow, quiet smile.",
+      "He closes the last page of the novel he just completed and holds the book to his chest.",
+      "She watches the children play in the garden she planted, and lets out a long, peaceful breath.",
+      "He sits on the porch with a cup of tea, watching the sunset after a long day\u2019s work.",
+      "She runs her hand over the smooth wood of the table she built, nodding to herself.",
+      "He looks around the crowded dinner table, then sinks into his chair with a soft, contented laugh."
+    ]
+  },
+  {
+    "name": "furious",
+    "scenarios": [
+      "He slams his fist on the table, rattling the glasses, and his face turns a deep red.",
+      "She snatches the letter from his hand and tears it in half without reading the rest.",
+      "He kicks the chair out of his way, sending it skidding across the floor.",
+      "She points a trembling finger at the door and her jaw is clenched so tight she can barely speak.",
+      "He throws his phone onto the sofa, then picks it up and hurls it against the wall.",
+      "She grips the edge of the counter, knuckles white, and her breath comes in sharp, angry bursts."
+    ]
+  },
+  {
+    "name": "gloomy",
+    "scenarios": [
+      "Rain streaks down the window as she stares at the gray horizon without blinking.",
+      "He pulls the curtains shut at 3 p.m. and sinks into the couch's shadow.",
+      "The coffee cup sits untouched, its steam dissolving into the dim kitchen air.",
+      "She traces a finger through the dust on the windowsill, sighing.",
+      "He turns off the radio mid-song and lets the silence fill the room.",
+      "The dog curls at her feet as she watches the same cloud pass overhead for an hour."
+    ]
+  },
+  {
+    "name": "grateful",
+    "scenarios": [
+      "She presses the worn photograph to her chest and closes her eyes.",
+      "He writes a long letter by hand, then addresses it with a trembling smile.",
+      "She sets an extra plate at the dinner table for the neighbor who helped her.",
+      "He whispers 'thank you' to the empty room after a phone call ends.",
+      "She plants a small tree in the backyard and waters it with tears in her eyes.",
+      "He carefully folds the borrowed coat and places it on the chair with a gentle pat."
+    ]
+  },
+  {
+    "name": "greedy",
+    "scenarios": [
+      "He grabs the last slice of cake before anyone else can reach for it.",
+      "She counts her coins twice, then slides a third scoop of ice cream into her bowl.",
+      "He pushes ahead in line, ignoring the murmur behind him.",
+      "She stuffs extra napkins into her purse even though her hands are full.",
+      "He eyes his friend's dessert and asks, 'Are you going to finish that?'",
+      "She takes two handfuls of candy from the jar, then goes back for more."
+    ]
+  },
+  {
+    "name": "grief_stricken",
+    "scenarios": [
+      "She holds the unopened letter to her chest and rocks slowly in the chair.",
+      "He stares at the empty bed, his hand reaching out to smooth the cold sheets.",
+      "She walks through the house turning on every light, then turns them off again.",
+      "He sits in the parked car long after the engine dies, gripping the steering wheel.",
+      "She places a spoon and a bowl at the table, then pushes them away.",
+      "He mouths a name to the mirror and can't look away from his own reflection."
+    ]
+  },
+  {
+    "name": "grumpy",
+    "scenarios": [
+      "He kicks a pebble off the path and mutters something under his breath.",
+      "She glares at the cheerful barista and orders without saying please.",
+      "He slams the fridge door shut when he can't find the milk.",
+      "She rolls her eyes at a friendly wave and turns her back.",
+      "He snaps the newspaper open and hides his face behind it.",
+      "She stomps past the blooming flowers, scowling at their brightness."
+    ]
+  },
+  {
+    "name": "guilty",
+    "scenarios": [
+      "He drops his gaze to the floor and fidgets with the hem of his shirt.",
+      "She hides the broken vase behind the couch and steps away quickly.",
+      "He rehearses an apology in his head but his mouth stays shut.",
+      "She avoids eye contact with the empty chair at the dinner table.",
+      "He gives a too-quick laugh and changes the subject when asked.",
+      "She scrolls past the text message without opening it, then locks the phone."
+    ]
+  },
+  {
+    "name": "happy",
+    "scenarios": [
+      "She hums while spinning in the sunlight, her arms stretched wide.",
+      "He taps his foot to the music and grins at his own reflection.",
+      "They skip down the sidewalk, tossing a coin into the fountain.",
+      "She hugs her knees on the porch swing, eyes closed, face tilted up.",
+      "He tosses a handful of confetti into the air and laughs loudly.",
+      "They clap their hands together and jump onto the bed."
+    ]
+  },
+  {
+    "name": "hateful",
+    "scenarios": [
+      "He narrows his eyes and spits on the ground as she passes.",
+      "She clenches her fists and mutters curses under her breath.",
+      "He slams the door and kicks the trash can across the alley.",
+      "She refuses to look at him, her lips pressed into a tight line.",
+      "He scratches a deep line into the desk with his fingernail.",
+      "She turns her back and walks away without a single word."
+    ]
+  },
+  {
+    "name": "heartbroken",
+    "scenarios": [
+      "She stares at the empty chair across the table, not touching her food.",
+      "He sits on the edge of the bed, holding a crumpled photograph.",
+      "She curls into a ball on the floor, her shoulders shaking silently.",
+      "He traces the initials carved into the tree trunk, then walks away slowly.",
+      "She presses her palm against the cold window and closes her eyes.",
+      "He leaves the gift on the doorstep and drives off without looking back."
+    ]
+  },
+  {
+    "name": "hope",
+    "scenarios": [
+      "She checks her phone every few seconds, a small smile flickering.",
+      "He plants seeds in the dry soil and waters them carefully each morning.",
+      "She writes a letter, folds it neatly, and places it under her pillow.",
+      "He looks up at the cloudy sky and opens his umbrella anyway.",
+      "She lights a candle and whispers a single word into the flame.",
+      "He saves the last piece of cake, wrapping it in a napkin for later."
+    ]
+  },
+  {
+    "name": "hopeful",
+    "scenarios": [
+      "She paints a bright yellow sun on the gray wall of the basement.",
+      "He buys a new notebook and writes the first page with a steady hand.",
+      "She ties a ribbon around the doorknob and steps back to admire it.",
+      "He checks the mailbox twice, then smiles at the empty slot.",
+      "She sets an extra plate at the dinner table, just in case.",
+      "He hums a tune while fixing the broken bicycle chain."
+    ]
+  },
+  {
+    "name": "horrified",
+    "scenarios": [
+      "She freezes mid-step, her hand flying to cover her mouth.",
+      "He stumbles backward, his eyes wide and unblinking.",
+      "She drops the glass, watching it shatter without making a sound.",
+      "He grips the edge of the table, his knuckles turning white.",
+      "She lets out a sharp gasp and takes a quick step away.",
+      "He stares at the screen, his face drained of all color."
+    ]
+  },
+  {
+    "name": "hostile",
+    "scenarios": [
+      "Her jaw clenched as she took a step toward him, fists tight at her sides.",
+      "He slammed the door shut and glared through the window without speaking.",
+      "She crossed her arms and refused to look at anyone entering the room.",
+      "His voice dropped to a low growl when she mentioned the topic again.",
+      "She shoved the chair aside and stood directly in his path.",
+      "He spat on the ground and turned his back on the group."
+    ]
+  },
+  {
+    "name": "humiliated",
+    "scenarios": [
+      "She stared at the floor, her face burning as laughter echoed around her.",
+      "He pulled his coat over his head and walked quickly past the crowd.",
+      "Her hands trembled as she gathered the papers that had scattered everywhere.",
+      "He avoided eye contact and whispered an apology to no one in particular.",
+      "She bit her lip and slipped out the side door before anyone could speak.",
+      "He buried his face in his hands and stayed silent for a long minute."
+    ]
+  },
+  {
+    "name": "hurt",
+    "scenarios": [
+      "She flinched and looked away when he repeated her words back to her.",
+      "His voice cracked as he tried to finish the sentence.",
+      "She pressed a hand to her chest and took a shaky breath.",
+      "He stared at the empty chair, his eyes suddenly wet.",
+      "She turned her back and wrapped her arms around herself tightly.",
+      "His smile faded completely, and he didn't say another word."
+    ]
+  },
+  {
+    "name": "hysterical",
+    "scenarios": [
+      "She laughed and cried at the same time, gasping for air between sobs.",
+      "He paced in circles, pulling at his hair and muttering nonsense.",
+      "Her voice rose to a shriek as she waved her arms wildly.",
+      "He couldn't stop trembling and kept repeating the same phrase over and over.",
+      "She grabbed the nearest cushion and screamed into it until her throat hurt.",
+      "He fell to his knees, rocking back and forth with his hands over his ears."
+    ]
+  },
+  {
+    "name": "impatient",
+    "scenarios": [
+      "She tapped her foot rapidly and checked her watch every few seconds.",
+      "He sighed loudly and drummed his fingers on the table.",
+      "She interrupted the speaker mid-sentence with a sharp 'Get to the point.'",
+      "He kept glancing at the door and shifting his weight from foot to foot.",
+      "She rolled her eyes and started packing her bag before the meeting ended.",
+      "He tapped the steering wheel and honked the horn twice at the stalled car."
+    ]
+  },
+  {
+    "name": "indifferent",
+    "scenarios": [
+      "He shrugged and continued scrolling through his phone without looking up.",
+      "She stared blankly out the window as the argument went on around her.",
+      "He gave a one-word answer and turned back to his book.",
+      "She didn't react when her name was called, just blinked slowly.",
+      "He picked a piece of lint off his sleeve while everyone else cheered.",
+      "She yawned and checked the time during the emotional announcement."
+    ]
+  },
+  {
+    "name": "indignant",
+    "scenarios": [
+      "She crossed her arms and stared at the clock that read 9:05.",
+      "He let out a sharp laugh when they suggested he had cheated.",
+      "She straightened her back and refused to look at the accuser.",
+      "He tapped the paper with his finger, jaw tight, eyes narrow.",
+      "She shook her head slowly, lips pressed into a thin white line.",
+      "He stood up from the table, chair scraping loudly against the floor."
+    ]
+  },
+  {
+    "name": "infatuated",
+    "scenarios": [
+      "She traced the rim of her coffee cup and smiled at nothing.",
+      "He kept glancing at the same corner of the room, cheeks flushed.",
+      "She saved every message from him into a folder labeled 'stars'.",
+      "He replayed their two-second handshake in his mind for the fifth time.",
+      "She laughed a little too loudly at his very average joke.",
+      "He doodled her initials in the margin of his notebook, then erased them."
+    ]
+  },
+  {
+    "name": "inspired",
+    "scenarios": [
+      "She scribbled furiously on the napkin, eyes wide and bright.",
+      "He stood in the gallery, mouth slightly open, barely blinking.",
+      "She grabbed her guitar before the last chord of the song faded.",
+      "He opened three new tabs and started typing at double speed.",
+      "She paced the room, hands gesturing wildly at the empty air.",
+      "He looked up at the stars and whispered, 'I know what to build.'"
+    ]
+  },
+  {
+    "name": "insulted",
+    "scenarios": [
+      "She blinked twice, then slowly set down the half-eaten sandwich.",
+      "He gave a short, empty laugh and turned his back to the speaker.",
+      "She picked up her bag and walked out without a single word.",
+      "He stared at the offered coin, then let it fall to the ground.",
+      "She pulled her hand back as if the compliment had burned her.",
+      "He kept his smile frozen while his knuckles turned white on the railing."
+    ]
+  },
+  {
+    "name": "invigorated",
+    "scenarios": [
+      "She sprinted up the final flight of stairs and burst onto the roof, arms wide.",
+      "He plunged into the cold lake and surfaced with a gasp and a grin.",
+      "She stood at the summit, letting the wind whip through her hair.",
+      "He pedaled faster, legs burning, laughing into the open road.",
+      "She threw open all the windows and took a deep, greedy breath.",
+      "He jumped off the dock and swam until his muscles hummed with life."
+    ]
+  },
+  {
+    "name": "irate",
+    "scenarios": [
+      "He slammed the door so hard a picture fell off the wall.",
+      "She threw the remote across the room, then immediately regretted it.",
+      "He paced back and forth, fists clenched, muttering under his breath.",
+      "She yanked the drawer open, grabbed the letter, and tore it in half.",
+      "He kicked the trash can, sending coffee grounds across the linoleum.",
+      "She jabbed her finger at the screen, voice rising to a near-shout."
+    ]
+  },
+  {
+    "name": "irritated",
+    "scenarios": [
+      "She taps her pen against the desk, each click faster than the last.",
+      "He rolls his eyes and lets out a sharp sigh as the phone rings again.",
+      "Her jaw tightens, and she presses her lips into a thin line.",
+      "He slams the drawer shut after it sticks for the third time.",
+      "She mutters under her breath while rearranging the crooked stack of papers.",
+      "He rubs his temples and glares at the dripping faucet."
+    ]
+  },
+  {
+    "name": "jealous",
+    "scenarios": [
+      "She watches her friend hug the trophy and slowly folds her arms.",
+      "He looks away when his coworker gets praised, then quietly clears his throat.",
+      "She scrolls through vacation photos and lets her phone drop onto the couch.",
+      "He forces a smile as his brother drives off in the new car.",
+      "She picks at her salad while her date raves about someone else's success.",
+      "He stares at the couple laughing nearby and grips his coffee cup tighter."
+    ]
+  },
+  {
+    "name": "joyful",
+    "scenarios": [
+      "She hums a tune while spinning in her desk chair, feet not touching the floor.",
+      "He tosses a ball into the air and catches it with a wide grin.",
+      "She bounces on her toes as she waits for the door to open.",
+      "He throws his arms out and twirls a younger child around in the yard.",
+      "She claps her hands together and lets out a bright, short laugh.",
+      "He skips a step as he walks down the sunny street, head tilted back."
+    ]
+  },
+  {
+    "name": "jubilant",
+    "scenarios": [
+      "She pumps her fist in the air and shouts, then hugs the nearest person.",
+      "He leaps onto the stage, arms raised, and spins in a full circle.",
+      "She throws confetti into the air and dances in the middle of the crowd.",
+      "He lifts the winner's medal above his head and roars with laughter.",
+      "She jumps up and down, grabbing her friend's shoulders and shaking them.",
+      "He runs across the field, slides on his knees, and points to the sky."
+    ]
+  },
+  {
+    "name": "kind",
+    "scenarios": [
+      "She kneels down to tie a child's shoelace without being asked.",
+      "He offers his seat on the bus and gestures with a gentle smile.",
+      "She holds the door open, waiting patiently for the slow walker behind her.",
+      "He listens without interrupting, nodding as the other person speaks.",
+      "She hands a tissue to the crying stranger and lightly touches their arm.",
+      "He leaves a note on the desk with a small drawing and a smiley face."
+    ]
+  },
+  {
+    "name": "lazy",
+    "scenarios": [
+      "He stays in bed, scrolling on his phone, long after the alarm stops.",
+      "She lets the dirty plate sit on the table and turns on the TV instead.",
+      "He yawns and stretches, then closes his eyes again without moving.",
+      "She kicks off her shoes in the middle of the hallway and leaves them there.",
+      "He stares at the open book but makes no move to turn the page.",
+      "She sinks deeper into the couch and asks someone else to get the remote."
+    ]
+  },
+  {
+    "name": "listless",
+    "scenarios": [
+      "She stares at the ceiling fan, watching the blades rotate without blinking.",
+      "He leaves his coffee untouched until it grows a skin on the surface.",
+      "The book lies open on her lap, but her eyes have not moved in ten minutes.",
+      "He drags his feet across the hallway, stopping to lean against the wall.",
+      "She picks up her phone, unlocks it, then sets it back down without tapping anything.",
+      "He sits on the edge of the bed, one sock on, the other dangling from his fingers."
+    ]
+  },
+  {
+    "name": "lonely",
+    "scenarios": [
+      "He scrolls through his contact list, then locks the phone and places it face-down.",
+      "She sets a second plate on the table, then slowly pushes it to the empty chair.",
+      "He watches a couple laughing at the bus stop and turns his collar up against the wind.",
+      "She types a long message, deletes it, and types only 'okay' before sending.",
+      "He sits in the back row of the cinema, the seat on either side of him empty.",
+      "She walks through the park on a Sunday afternoon, stepping around families on blankets."
+    ]
+  },
+  {
+    "name": "loving",
+    "scenarios": [
+      "She brushes a stray hair from his forehead and lets her fingers linger on his cheek.",
+      "He wakes up early to reheat the coffee before her alarm goes off.",
+      "She tucks a handwritten note into his lunch bag, hidden beneath the apple.",
+      "He listens to her describe her day, nodding even when the story wanders.",
+      "She pulls the blanket up to his chin and kisses the corner of his mouth.",
+      "He carries her grocery bags inside, then returns to bring in the one she forgot."
+    ]
+  },
+  {
+    "name": "mad",
+    "scenarios": [
+      "He slams the refrigerator door so hard the magnets clatter to the floor.",
+      "She clenches her jaw and stares at the screen without blinking.",
+      "He throws the pen across the room, then kicks the leg of the desk.",
+      "She rips the paper in half and drops both pieces into the trash can.",
+      "He drives with both hands gripping the wheel, his knuckles white.",
+      "She slams her palm on the counter and the glasses jump."
+    ]
+  },
+  {
+    "name": "melancholy",
+    "scenarios": [
+      "She watches the rain streak down the window and traces a single drop with her finger.",
+      "He sits on the porch steps, staring at the empty swing swaying in the breeze.",
+      "She plays the same old song on repeat, her eyes fixed on a faded photograph.",
+      "He walks past the playground and slows down, watching the empty swings.",
+      "She folds the worn sweater and presses it to her face before putting it away.",
+      "He stands at the window, watching the leaves fall one by one from the tree."
+    ]
+  },
+  {
+    "name": "miserable",
+    "scenarios": [
+      "He pulls the blanket over his head and curls into a ball on the sofa.",
+      "She stares at the cold soup in front of her, not lifting the spoon.",
+      "He lies on the bathroom floor with his arm over his eyes, not moving.",
+      "She lets the phone ring and ring, burying her face deeper into the pillow.",
+      "He wears the same wrinkled shirt from yesterday, not bothering to change.",
+      "She sits on the curb, hugging her knees, as rain soaks through her jacket."
+    ]
+  },
+  {
+    "name": "mortified",
+    "scenarios": [
+      "She pulls her jacket over her face after tripping on stage.",
+      "He stares at the floor, his cheeks burning, as the room erupts in laughter.",
+      "She covers her ears and shakes her head slowly, replaying her own words.",
+      "He slinks down in his chair, hoping to become invisible.",
+      "She buries her face in her hands, refusing to look up from the table.",
+      "He whispers 'I want to disappear' and turns away from the group."
+    ]
+  },
+  {
+    "name": "mystified",
+    "scenarios": [
+      "He tilts his head and squints at the sudden change in the machine's display.",
+      "She reads the same line three times, then mouths the words silently.",
+      "He looks from the empty jar to the locked cabinet, then back again.",
+      "She holds the object up to the light and turns it slowly in her palm.",
+      "He scratches his head and mutters 'That doesn't add up at all.'",
+      "She stares at the cryptic note, her lips parted, saying nothing."
+    ]
+  },
+  {
+    "name": "nervous",
+    "scenarios": [
+      "He drums his fingers on the table and checks his watch every few seconds.",
+      "She paces the hallway, twisting a strand of hair around her finger.",
+      "He clears his throat repeatedly and shifts his weight from foot to foot.",
+      "She bites her lip and glances at the door every time someone passes.",
+      "He wipes his palms on his pants before reaching for the handle.",
+      "She takes a deep breath, then lets it out in a shaky, uneven sigh."
+    ]
+  },
+  {
+    "name": "nostalgic",
+    "scenarios": [
+      "She runs her fingers over the faded photograph and smiles softly.",
+      "He closes his eyes and breathes in the scent of pine and old wood.",
+      "She hums an old lullaby while looking out at the empty playground.",
+      "He picks up the worn baseball glove and holds it to his nose.",
+      "She traces the initials carved into the desk and sighs with a faint smile.",
+      "He flips through a yellowed yearbook, pausing on every face."
+    ]
+  },
+  {
+    "name": "obstinate",
+    "scenarios": [
+      "He crosses his arms and sets his jaw, refusing to move from the spot.",
+      "She shakes her head firmly and repeats 'No, I won't change my mind.'",
+      "He stares straight ahead and ignores every suggestion thrown his way.",
+      "She plants her feet and folds her arms, not budging an inch.",
+      "He turns his back on the offered alternative and walks away.",
+      "She clenches her fists and says 'I already decided, and that's final.'"
+    ]
+  },
+  {
+    "name": "offended",
+    "scenarios": [
+      "She stiffens and slowly puts down her fork, her smile gone.",
+      "He narrows his eyes and takes a step back, his jaw tight.",
+      "She sets her glass down with a sharp clink and looks away coldly.",
+      "He lets out a short, humorless laugh and shakes his head slowly.",
+      "She folds her arms and raises an eyebrow, her lips pressed into a thin line.",
+      "He stands up abruptly, turns his back, and walks out of the room."
+    ]
+  },
+  {
+    "name": "on_edge",
+    "scenarios": [
+      "She flinches at the sound of a dropped spoon.",
+      "He keeps glancing over his shoulder while walking down the empty hall.",
+      "Her fingers drum a rapid rhythm on the table as she stares at the clock.",
+      "He snaps at his colleague for a simple question about the printer.",
+      "She sits upright in bed, straining to hear any noise in the dark.",
+      "He chews his lip raw while waiting for the test results to load."
+    ]
+  },
+  {
+    "name": "optimistic",
+    "scenarios": [
+      "She hums a cheerful tune while planting seeds in the rain.",
+      "He sketches a rough blueprint for a project that hasn't been approved yet.",
+      "She checks her phone every few seconds, expecting good news any moment.",
+      "He packs a picnic basket for a weekend hike despite the cloudy forecast.",
+      "She writes a list of goals for next year, underlining each one twice.",
+      "He smiles at the empty canvas and picks up a fresh brush."
+    ]
+  },
+  {
+    "name": "outraged",
+    "scenarios": [
+      "He slams his fist on the table, causing papers to scatter.",
+      "She reads the email again, her jaw tightening with each word.",
+      "He points a shaking finger at the politician on the screen.",
+      "She tears the parking ticket in half and throws it on the ground.",
+      "He storms out of the meeting, muttering under his breath.",
+      "She types a furious reply, then deletes it and starts over."
+    ]
+  },
+  {
+    "name": "overwhelmed",
+    "scenarios": [
+      "She stares at the pile of unread emails, her hands frozen above the keyboard.",
+      "He sits in the parked car, gripping the wheel, unable to open the door.",
+      "She blinks slowly at the grocery list, then closes her eyes.",
+      "He drops his bag at the doorstep and slides down the wall to the floor.",
+      "She holds a crying baby in one arm and a ringing phone in the other, unmoving.",
+      "He looks at the calendar covered in deadlines and lets out a long, empty sigh."
+    ]
+  },
+  {
+    "name": "panicked",
+    "scenarios": [
+      "He pats his pockets frantically, then dumps his entire backpack on the ground.",
+      "She runs down the platform, calling out to a train that has already left.",
+      "He dials a number with trembling fingers, then hangs up before it rings.",
+      "She gasps and spins around, clutching her chest when a door creaks open.",
+      "He paces in tight circles, breathing in short, rapid bursts.",
+      "She throws open every drawer in the kitchen, searching for something she can't name."
+    ]
+  },
+  {
+    "name": "paranoid",
+    "scenarios": [
+      "He checks the locks on all three doors twice before sitting down.",
+      "She pulls the curtains shut even though the window faces a brick wall.",
+      "He turns off his phone and removes the battery before placing it in the drawer.",
+      "She scans every face in the caf\u00e9, then ducks behind her menu.",
+      "He peeks through the blinds at the empty street, then steps back quickly.",
+      "She reads the same text message three times, searching for a hidden meaning."
+    ]
+  },
+  {
+    "name": "patient",
+    "scenarios": [
+      "She watches the slow drip of the IV bag without checking her watch.",
+      "He untangles the knot in the necklace for the third time, his fingers steady.",
+      "The toddler stumbles again, and she kneels with her arms still open.",
+      "He listens to the same story for the fifth time, nodding as if it is the first.",
+      "She waits at the bus stop as the rain soaks her collar, her breath even.",
+      "He lets the line of customers argue, his posture relaxed at the register."
+    ]
+  },
+  {
+    "name": "peaceful",
+    "scenarios": [
+      "She floats on her back in the lake, eyes closed, arms spread wide.",
+      "He sits on the porch swing, watching the sunset paint the clouds.",
+      "The cat curls in her lap, and she strokes its fur in long, slow motions.",
+      "He lies in the hammock, the only sound the whisper of leaves.",
+      "She breathes in the scent of rain on dry earth, her shoulders finally down.",
+      "He rests his cheek against the cool window, watching snow fall silently."
+    ]
+  },
+  {
+    "name": "perplexed",
+    "scenarios": [
+      "He tilts the map left, then right, then upside down.",
+      "She stares at the math problem, her pencil hovering motionless.",
+      "He reads the same line of the email three times, his brow furrowed.",
+      "She blinks at the locked door, jiggling the key that no longer fits.",
+      "He holds the phone away from his ear, mouth slightly open.",
+      "She looks from the empty fridge to the grocery list in her hand."
+    ]
+  },
+  {
+    "name": "playful",
+    "scenarios": [
+      "He flicks a drop of water at her from the kitchen sink, grinning.",
+      "She hides behind a curtain, then pops out with a silly face.",
+      "He balances a spoon on his nose, eyes crossed for effect.",
+      "She tiptoes up behind him and taps his opposite shoulder.",
+      "He throws a pillow at the sofa, then dives behind it.",
+      "She makes the stuffed animal dance across the table, complete with a squeaky voice."
+    ]
+  },
+  {
+    "name": "pleased",
+    "scenarios": [
+      "She takes a bite of the cake and closes her eyes with a small smile.",
+      "He leans back in his chair, nodding slowly at the finished painting.",
+      "She runs her finger along the smooth edge of the newly built shelf.",
+      "He reads the compliment again, a quiet chuckle escaping his lips.",
+      "She watches the garden bloom, her hand resting lightly on her hip.",
+      "He holds up the perfectly folded origami crane, turning it in the light."
+    ]
+  },
+  {
+    "name": "proud",
+    "scenarios": [
+      "He straightens his shoulders as his daughter accepts the trophy.",
+      "She frames the first-place ribbon and hangs it above the desk.",
+      "He shakes the winner's hand, his chest lifted and chin high.",
+      "She watches the garden she planted win the neighborhood competition.",
+      "He points to his son's drawing on the refrigerator, beaming at a neighbor.",
+      "She pins the medal onto her own shirt, standing a little taller."
+    ]
+  },
+  {
+    "name": "puzzled",
+    "scenarios": [
+      "She tilts her head, staring at the unsolvable puzzle box.",
+      "He scratches his chin while reading the cryptic note for the third time.",
+      "The student blinks rapidly at the math equation, then looks at the clock.",
+      "She holds the mismatched sock up to the light, turning it over slowly.",
+      "He mouths the foreign word again, then shrugs at the speaker.",
+      "The detective circles the room, stopping to frown at the empty safe."
+    ]
+  },
+  {
+    "name": "rattled",
+    "scenarios": [
+      "Her hands shake as she fumbles to unlock the car door after the near-miss.",
+      "He jumps at the sudden sound of a book dropping, then grips the table edge.",
+      "She spills coffee on her shirt and freezes, breathing in short gasps.",
+      "He keeps glancing over his shoulder while walking down the quiet street.",
+      "Her voice wavers when she tries to order, then she just points at the menu.",
+      "He knocks over a glass and stares at the shards, unable to move."
+    ]
+  },
+  {
+    "name": "reflective",
+    "scenarios": [
+      "She gazes out the rain-streaked window, tracing a drop with her finger.",
+      "He sits on the park bench, watching leaves fall, his coffee growing cold.",
+      "She runs her thumb over an old photograph, then sets it down gently.",
+      "He stares at the sunset, nodding slowly as if in conversation with himself.",
+      "She closes her eyes and leans back, a small smile touching her lips.",
+      "He walks slowly past the empty classroom, pausing at the door frame."
+    ]
+  },
+  {
+    "name": "refreshed",
+    "scenarios": [
+      "She steps out of the shower, water droplets on her shoulders, and takes a deep breath.",
+      "He stretches his arms wide after the morning jog, then grins at the sky.",
+      "She sips iced tea on the porch, letting the breeze lift her hair.",
+      "He opens the window wide and inhales the smell of rain on pavement.",
+      "She splashes cold water on her face, then dries it with a clean towel.",
+      "He lies down on the cool grass under a tree, closing his eyes with a sigh."
+    ]
+  },
+  {
+    "name": "regretful",
+    "scenarios": [
+      "He looks at the unsent letter in his hand, then slowly crumples it.",
+      "She stares at the empty chair across the dinner table, her fork hovering.",
+      "He presses his palm against the locked door, then lets his forehead rest there.",
+      "She re-reads the last text message, then deletes the draft reply.",
+      "He watches the train pull away, his shoulders slumping as he turns around.",
+      "She holds the wilted flower, then places it in the trash without looking."
+    ]
+  },
+  {
+    "name": "rejuvenated",
+    "scenarios": [
+      "She emerges from the forest trail, cheeks flushed, and beams at the open meadow.",
+      "He rolls his shoulders back after a long nap, then springs to his feet.",
+      "She dips her toes into the cool stream, then wades in with a laugh.",
+      "He finishes the yoga pose, opens his eyes, and breathes out slowly.",
+      "She runs her fingers through her hair after a swim, shaking off the water.",
+      "He plants both feet on the earth after a hike, spreading his arms wide."
+    ]
+  },
+  {
+    "name": "relaxed",
+    "scenarios": [
+      "She sinks into the hammock, letting her arms dangle over the edges.",
+      "He slowly exhales and closes his eyes as the warm sand cradles his back.",
+      "Her shoulders drop as she watches the steam rise from the tea cup.",
+      "He stretches out on the sofa, one hand resting on his stomach, breathing evenly.",
+      "She lets her head fall back against the chair, her fingers going limp around the book.",
+      "He lies on the grass, watching clouds drift, not a muscle moving."
+    ]
+  },
+  {
+    "name": "relieved",
+    "scenarios": [
+      "He lets out a long breath and leans back, the tension draining from his jaw.",
+      "She puts a hand to her chest and smiles as the test results come back negative.",
+      "He closes the letter and whispers, 'Thank goodness,' under his breath.",
+      "She drops her bag on the floor and sinks into the chair, her whole body softening.",
+      "He puts down the phone and rubs his face, a small, shaky smile appearing.",
+      "She finally sees the bus coming and lets her shoulders fall from up near her ears."
+    ]
+  },
+  {
+    "name": "remorseful",
+    "scenarios": [
+      "He stares at the broken vase, his hand still extended toward it, and swallows hard.",
+      "She looks down at the floor, her voice trailing off into a whisper.",
+      "He keeps his eyes on the table as he pushes the untouched plate away.",
+      "She rubs the back of her neck and lets out a slow, heavy sigh.",
+      "He picks up the torn photo and traces the rip with his fingertip, not looking up.",
+      "She sits on the edge of the bed, head bowed, fingers gripping the blanket tightly."
+    ]
+  },
+  {
+    "name": "resentful",
+    "scenarios": [
+      "He crosses his arms and stares out the window, refusing to turn around.",
+      "She gives a short, tight smile and says nothing, her eyes hard.",
+      "He mutters under his breath while stacking the dishes, each clink a little too sharp.",
+      "She watches her colleague accept the award, her jaw clenched and arms folded.",
+      "He nods slowly at the compliment, but his mouth is a flat, thin line.",
+      "She turns away, her footsteps deliberately heavy on the wooden floor."
+    ]
+  },
+  {
+    "name": "resigned",
+    "scenarios": [
+      "He shrugs slowly and picks up the last box, not meeting anyone's eyes.",
+      "She sits down at the cluttered desk and pulls the stack of forms toward her without a word.",
+      "He nods once, his face blank, and turns to walk away.",
+      "She lets the phone slip from her ear and gazes at the ceiling for a long moment.",
+      "He puts on his coat, checks his watch, and steps out into the rain without an umbrella.",
+      "She places the keys on the table and walks out, leaving the door slightly ajar."
+    ]
+  },
+  {
+    "name": "restless",
+    "scenarios": [
+      "He taps his fingers on the table, then switches to tapping his foot.",
+      "She gets up, walks to the window, turns, and walks back to the chair.",
+      "He keeps shifting in his seat, crossing and uncrossing his legs every few seconds.",
+      "She picks up a pen, puts it down, picks it up again, and clicks it repeatedly.",
+      "He checks his phone, locks it, then unlocks it again within ten seconds.",
+      "She paces the length of the room, then stops, runs a hand through her hair, and resumes pacing."
+    ]
+  },
+  {
+    "name": "sad",
+    "scenarios": [
+      "She stares at the empty chair across the dinner table, her fork hovering over untouched food.",
+      "He wipes a tear from his cheek as he folds his daughter's old baby blanket for the last time.",
+      "They sit on the park bench, watching the rain streak down the glass of the bus shelter.",
+      "Her shoulders slump forward, and she lets out a slow, shaky breath while holding the faded photograph.",
+      "He drags his feet along the hallway, the corners of his mouth turned downward, avoiding everyone\u2019s eyes.",
+      "She places a single flower on the grave, then turns away, her hand lingering on the cold stone."
+    ]
+  },
+  {
+    "name": "safe",
+    "scenarios": [
+      "She locks the door behind her, presses her back against it, and lets her shoulders finally drop.",
+      "He curls up under a thick wool blanket, listening to the rain patter against the windowpane.",
+      "They sit in the corner booth of the caf\u00e9, a steaming mug cupped in both hands, watching the busy street from a distance.",
+      "She rests her head on his shoulder, her breathing slow and even, as the fire crackles softly.",
+      "He checks the flashlight batteries, then places it on the nightstand beside the locked bedroom door.",
+      "They hold hands under the table, their thumbs tracing small circles, while the storm howls outside."
+    ]
+  },
+  {
+    "name": "satisfied",
+    "scenarios": [
+      "She sets down the paintbrush, steps back from the canvas, and nods once, slowly.",
+      "He leans back in his chair, folds his arms, and watches the last line of code compile without errors.",
+      "They wipe the counter clean, then stand in the doorway, surveying the spotless kitchen with a faint smile.",
+      "She closes the book, runs her palm over the cover, and places it neatly on the finished pile.",
+      "He tastes the soup from the ladle, closes his eyes for a moment, and gives a single, firm nod.",
+      "They tighten the last screw on the bicycle, spin the wheel, and listen to the smooth, even clicking sound."
+    ]
+  },
+  {
+    "name": "scared",
+    "scenarios": [
+      "She freezes mid-step, her eyes fixed on the shadow shifting under the door crack.",
+      "He grips the armrest so tightly his knuckles turn white, refusing to look at the screen.",
+      "They pull the covers up to their chin, staring at the closet door that is slightly ajar.",
+      "Her breath catches, and she takes a quick step back, one hand flying to her chest.",
+      "He fumbles with the keys, dropping them twice, while glancing over his shoulder down the dark alley.",
+      "She presses herself flat against the wall, her hand clamped over her mouth, listening to heavy footsteps approach."
+    ]
+  },
+  {
+    "name": "scornful",
+    "scenarios": [
+      "She raises one eyebrow and lets her gaze travel slowly from his shoes to his face, then looks away.",
+      "He lets out a short, sharp laugh, shaking his head while examining the crooked sign with obvious distaste.",
+      "They purse their lips and turn the page of the report without finishing the paragraph, setting it aside on the desk.",
+      "She picks up the poorly wrapped gift with two fingers, holding it at arm's length as if it might stain her hands.",
+      "He leans back, crosses his arms, and watches the presentation with a faint, lopsided smirk.",
+      "They sniff once, then step deliberately around the puddle on the sidewalk, not breaking their stride."
+    ]
+  },
+  {
+    "name": "self_confident",
+    "scenarios": [
+      "She walks into the room, meets every pair of eyes, and takes her seat without hurrying.",
+      "He stands at the podium, one hand resting lightly on the edge, and waits for the murmurs to fade.",
+      "They raise their hand high, palm open, before the question is even finished being asked.",
+      "She looks down at the contract, signs her name with a clear, steady stroke, then slides it back across the table.",
+      "He adjusts his tie once, then steps onto the stage, his shoulders square and his chin slightly lifted.",
+      "They hold the trophy up with one arm, their gaze steady on the crowd, and smile without a trace of doubt."
+    ]
+  },
+  {
+    "name": "self_conscious",
+    "scenarios": [
+      "She adjusts her collar for the fifth time as a stranger glances her way.",
+      "He laughs too loudly at a joke he barely heard, then checks if anyone noticed.",
+      "She tucks her hair behind her ear repeatedly while walking into the crowded room.",
+      "He crosses his arms and looks down, pretending to study his shoes.",
+      "She feels her face warm as the spotlight hits her during the presentation.",
+      "He mimics a casual yawn to hide how he\u2019s scanning the room for judgment."
+    ]
+  },
+  {
+    "name": "self_critical",
+    "scenarios": [
+      "He deletes the email draft, muttering that it sounded stupid anyway.",
+      "She stares at the mirror and frowns at a tiny smudge on her shirt.",
+      "He rewrites the sentence for the third time, then crumples the paper.",
+      "She sighs and closes the notebook, saying she\u2019ll never get it right.",
+      "He shakes his head after every stroke of the brush, calling it a mess.",
+      "She re-reads her text and quickly types, 'Ignore that, I\u2019m an idiot.'"
+    ]
+  },
+  {
+    "name": "sensitive",
+    "scenarios": [
+      "He flinches and pulls his hand back when someone pats his shoulder too firmly.",
+      "She blinks rapidly and turns away after a coworker\u2019s offhand comment.",
+      "He pauses mid-bite, his eyes stinging, when the movie shows a hurt animal.",
+      "She wraps her arms around herself when the room\u2019s laughter feels too loud.",
+      "He leaves the room quietly after hearing a joke about his hometown.",
+      "She traces a scratch on her arm with a fingertip, her breath catching."
+    ]
+  },
+  {
+    "name": "sentimental",
+    "scenarios": [
+      "She presses the dried flower between the pages of an old diary.",
+      "He runs his thumb over the faded engraving on a rusted pocket watch.",
+      "She smiles faintly while folding a child\u2019s tiny sweater she kept for years.",
+      "He holds the ticket stub from their first date and closes his eyes.",
+      "She hums a lullaby her grandmother used to sing while dusting an old photo.",
+      "He sets the chipped mug on the shelf, exactly where it always was."
+    ]
+  },
+  {
+    "name": "serene",
+    "scenarios": [
+      "She rests her palms on the cool grass and watches clouds drift slowly.",
+      "He leans back in the hammock, listening to the steady hum of bees.",
+      "She lets her fingers trail through the still water of the pond.",
+      "He closes his eyes as the breeze moves the leaves above him.",
+      "She sits on the porch step, breathing in the scent of rain-soaked earth.",
+      "He lies on the sand, feeling the sun warm his eyelids without a thought."
+    ]
+  },
+  {
+    "name": "shaken",
+    "scenarios": [
+      "He grips the edge of the table until his knuckles turn white.",
+      "She stares at the phone screen, her hand trembling as she sets it down.",
+      "He takes a step back and presses his palm against the wall to steady himself.",
+      "She blinks rapidly, her breath shallow, as the car\u2019s horn fades away.",
+      "He spills coffee on his shirt and doesn\u2019t even notice, frozen mid-step.",
+      "She wraps her arms around her knees, rocking slightly on the cold floor."
+    ]
+  },
+  {
+    "name": "shocked",
+    "scenarios": [
+      "Her coffee cup freezes halfway to her lips as she stares at the headline.",
+      "He drops the phone and steps backward, eyes wide and unblinking.",
+      "The room goes silent, and she presses both hands flat over her mouth.",
+      "He blinks three times in a row, then reads the sentence again from the start.",
+      "She slowly sinks into the nearest chair, her face drained of all color.",
+      "His jaw hangs open for a full five seconds before he manages to whisper, 'No.'"
+    ]
+  },
+  {
+    "name": "skeptical",
+    "scenarios": [
+      "She tilts her head and narrows one eye at the explanation.",
+      "He slowly crosses his arms and lets out a short, humorless laugh.",
+      "She picks up the document, holds it at arm's length, and squints.",
+      "He taps his finger on the table and says, 'Uh-huh,' without nodding.",
+      "She raises an eyebrow and lets the silence stretch just a little too long.",
+      "He leans back in his chair and studies the speaker's face without a word."
+    ]
+  },
+  {
+    "name": "sleepy",
+    "scenarios": [
+      "Her eyelids droop and she blinks slowly, each blink lasting a second too long.",
+      "He rests his chin on his palm, and his head starts to drift sideways.",
+      "She yawns so deeply that her eyes water, then forgets what she was saying.",
+      "He stares at the clock on the wall, the numbers blurring into soft shapes.",
+      "She lets out a long, slow breath and slumps deeper into the couch cushions.",
+      "His head bobs forward once, then twice, before he jerks it upright again."
+    ]
+  },
+  {
+    "name": "sluggish",
+    "scenarios": [
+      "He lifts his arm to check the time, the motion taking twice as long as usual.",
+      "She pushes herself out of the chair with a groan, then stands still for a moment.",
+      "He shuffles across the room, each foot barely leaving the floor.",
+      "She stares at the open fridge, unable to decide what she wanted to grab.",
+      "He blinks at the page, his eyes moving from left to right at a crawl.",
+      "She reaches for the cup, misses it by an inch, and tries again without changing speed."
+    ]
+  },
+  {
+    "name": "smug",
+    "scenarios": [
+      "He leans back with his hands behind his head and lets out a satisfied hum.",
+      "She slowly adjusts her collar and gives a tiny, one-sided smile.",
+      "He taps his own chest with a thumb and then points at the solved puzzle.",
+      "She lets her gaze slide over the others, then turns away with a slight shrug.",
+      "He folds his arms and lifts his chin just a fraction higher than before.",
+      "She waits until everyone is looking, then slowly holds up the winning card."
+    ]
+  },
+  {
+    "name": "sorry",
+    "scenarios": [
+      "He rubs the back of his neck and shifts his weight from foot to foot.",
+      "She looks down at her hands and twists her ring around her finger.",
+      "He sets the broken vase on the table and steps back without a word.",
+      "She bites her lower lip and glances up, then immediately looks away.",
+      "He places a hand on the other person's shoulder and ducks his head.",
+      "She slides the untouched apology note across the counter, then waits."
+    ]
+  },
+  {
+    "name": "spiteful",
+    "scenarios": [
+      "She deliberately knocked over his tower of blocks and smirked.",
+      "He returned the borrowed book with a torn page and a shrug.",
+      "She whispered a false rumor about her rival just before the meeting.",
+      "He hid the last cookie in the trash so no one else could enjoy it.",
+      "She smiled when her coworker\u2019s presentation crashed mid-slide.",
+      "He erased the winning move from the whiteboard after their opponent left."
+    ]
+  },
+  {
+    "name": "stimulated",
+    "scenarios": [
+      "Her eyes widened as she flipped through the pages of the dense physics journal.",
+      "He tapped his foot rapidly while solving the complex puzzle.",
+      "She leaned forward, jotting notes as the lecture revealed a new theory.",
+      "His fingers flew across the keyboard, chasing the next line of code.",
+      "She paced the room, sketching connections between scattered ideas on a napkin.",
+      "He couldn't stop grinning as the mystery novel\u2019s plot twisted unexpectedly."
+    ]
+  },
+  {
+    "name": "stressed",
+    "scenarios": [
+      "She chewed her pen cap into shreds while staring at the deadline.",
+      "He kept checking his watch every thirty seconds during the traffic jam.",
+      "Her shoulders were hunched up to her ears as she scanned the exam paper.",
+      "He snapped at the barista for a minor mistake in his coffee order.",
+      "She forgot her keys, then her phone, then her own lunch in a single hour.",
+      "His hands trembled slightly as he opened the envelope from the hospital."
+    ]
+  },
+  {
+    "name": "stubborn",
+    "scenarios": [
+      "He refused to use the shortcut, even though the long road was flooded.",
+      "She crossed her arms and repeated the same answer three times.",
+      "He spent an hour trying to force a square peg into a round hole.",
+      "She ignored all advice and painted the room bright orange anyway.",
+      "He insisted on carrying all five grocery bags in one trip, despite the strain.",
+      "She would not admit she was lost, even when the GPS said otherwise."
+    ]
+  },
+  {
+    "name": "stuck",
+    "scenarios": [
+      "He pressed the gas pedal again, but the car's tires only spun in the mud.",
+      "She stared at the blank screen, her cursor blinking without progress.",
+      "He jiggled the key in the lock, but the door would not budge.",
+      "She tried to stand, but her heel was wedged between two cobblestones.",
+      "He repeated the same line of code, each time getting the same error.",
+      "She sat in the elevator, watching the floor numbers remain unchanged."
+    ]
+  },
+  {
+    "name": "sullen",
+    "scenarios": [
+      "He sat in the corner with his hood up, not speaking to anyone.",
+      "She stared out the window and gave only one-word answers.",
+      "He pushed his lunch tray away without touching the food.",
+      "She slumped in her chair, eyes fixed on the floor during the party.",
+      "He turned his back to the group and pulled out his headphones.",
+      "She drew slow circles on the tabletop, refusing to look up."
+    ]
+  },
+  {
+    "name": "surprised",
+    "scenarios": [
+      "Her eyes flew wide as the cake toppled off the table.",
+      "He froze mid-step, hand hovering over the doorknob.",
+      "She blinked rapidly, then checked the clock again.",
+      "His jaw dropped when the envelope held a plane ticket.",
+      "She let out a sharp gasp, nearly dropping her coffee.",
+      "He spun around, mouth forming a silent 'O'."
+    ]
+  },
+  {
+    "name": "suspicious",
+    "scenarios": [
+      "She narrowed her eyes at the freshly sealed jar.",
+      "He tilted his head, studying the stranger's too-bright smile.",
+      "Her gaze lingered on the odd footprint by the back door.",
+      "He crossed his arms, one eyebrow slowly rising.",
+      "She leaned closer, sniffing the air near the open drawer.",
+      "He tapped his fingers on the table, watching the waiter's hands."
+    ]
+  },
+  {
+    "name": "sympathetic",
+    "scenarios": [
+      "She gently placed a hand on his trembling shoulder.",
+      "He knelt down to meet the child's tear-streaked face.",
+      "She handed him a tissue without a word, her eyes soft.",
+      "He nodded slowly, letting the silence stretch between them.",
+      "She bit her lip and offered a small, sad smile.",
+      "He pulled the blanket higher around her, voice barely a whisper."
+    ]
+  },
+  {
+    "name": "tense",
+    "scenarios": [
+      "His knuckles were white against the steering wheel.",
+      "She sat perfectly still, her breath shallow and quick.",
+      "He kept cracking his neck, eyes darting to the door.",
+      "Her foot tapped a frantic rhythm under the table.",
+      "He clenched his jaw until his teeth ached.",
+      "She folded her arms so tightly her nails dug into her skin."
+    ]
+  },
+  {
+    "name": "terrified",
+    "scenarios": [
+      "Her face drained of all color as the shadow loomed closer.",
+      "He scrambled backward, hands scraping against the wall.",
+      "She couldn't move, her scream trapped in her throat.",
+      "His eyes were fixed wide open, pupils shrunk to pinpricks.",
+      "She pressed herself into the corner, shaking violently.",
+      "He clutched the edge of the desk, knuckles bone-white."
+    ]
+  },
+  {
+    "name": "thankful",
+    "scenarios": [
+      "She pressed both hands to her heart and let out a long breath.",
+      "He looked down at the note and closed his eyes slowly.",
+      "She mouthed 'thank you' across the crowded room.",
+      "He held the warm cup a moment longer than necessary, smiling.",
+      "She wiped a tear from her cheek and hugged the letter to her chest.",
+      "He gripped the driver's hand with both of his, nodding once."
+    ]
+  },
+  {
+    "name": "thrilled",
+    "scenarios": [
+      "She clutches the golden ticket to her chest and spins in a circle.",
+      "He pumps his fist in the air and lets out a joyful shout.",
+      "Her eyes widen as she reads the acceptance letter for the third time.",
+      "He jumps onto the couch and hugs his teammate, laughing uncontrollably.",
+      "She presses both hands to her cheeks, grinning so wide her eyes crinkle.",
+      "He runs down the hallway, skidding to a stop to show everyone the surprise."
+    ]
+  },
+  {
+    "name": "tired",
+    "scenarios": [
+      "She sinks into the chair, letting her head fall back with a heavy sigh.",
+      "He rubs his eyes slowly, then blinks several times without focusing.",
+      "Her shoulders slump as she drags the suitcase across the hotel lobby.",
+      "He rests his forehead against the cool window glass, eyes half-closed.",
+      "She yawns mid-sentence, then forgets what she was saying.",
+      "He lies down on the floor, not bothering to move to the couch."
+    ]
+  },
+  {
+    "name": "tormented",
+    "scenarios": [
+      "He stares at the photograph, then turns it face-down with a shaking hand.",
+      "She paces the room, pressing her palms against her temples.",
+      "He sits on the edge of the bed, rocking slightly, his jaw tight.",
+      "She stares at the ceiling all night, tears sliding into her hair.",
+      "He clenches his fists until his nails dig into his palms, then releases.",
+      "She whispers the same apology over and over, even though no one is listening."
+    ]
+  },
+  {
+    "name": "trapped",
+    "scenarios": [
+      "She presses her palms flat against the locked door and pushes, but it doesn't budge.",
+      "He circles the small room again, counting the steps between each wall.",
+      "She sits on the floor with her knees pulled to her chest, staring at the single high window.",
+      "He tries the handle one more time, then lets his hand drop limply.",
+      "She bangs on the wall until her knuckles are red, then stops and listens to the silence.",
+      "He traces the outline of the keyhole with his finger, knowing it leads nowhere."
+    ]
+  },
+  {
+    "name": "triumphant",
+    "scenarios": [
+      "He raises both arms above his head as the crowd roars around him.",
+      "She places the trophy gently on the table, then steps back and beams.",
+      "He slaps the final card onto the pile and leans back with a slow, satisfied grin.",
+      "She plants the flag into the summit snow and stands still, catching her breath.",
+      "He holds up the signed contract, then shakes his boss\u2019s hand firmly.",
+      "She crosses the finish line first, then bends over, hands on her knees, smiling."
+    ]
+  },
+  {
+    "name": "troubled",
+    "scenarios": [
+      "He stares at the letter without blinking, then folds it and puts it in his pocket.",
+      "She chews on her lower lip while scrolling through the news headlines again.",
+      "He runs a hand through his hair and looks out the window, not seeing anything.",
+      "She sets down her coffee without taking a sip, her brow furrowed.",
+      "He picks up the phone, then puts it back down without dialing.",
+      "She sits at the dinner table, pushing food around her plate with a fork."
+    ]
+  },
+  {
+    "name": "uneasy",
+    "scenarios": [
+      "She keeps glancing over her shoulder at the empty hallway.",
+      "He fidgets with the edge of his sleeve while waiting for the call.",
+      "The silence in the room makes her shift in her chair every few seconds.",
+      "He clears his throat three times before speaking, as if testing the air.",
+      "She checks her phone repeatedly, though no messages have arrived.",
+      "He stands at the door, one hand on the knob, hesitating to turn it."
+    ]
+  },
+  {
+    "name": "unhappy",
+    "scenarios": [
+      "She stares at her lunch tray, pushing the food around without taking a bite.",
+      "He lets out a long sigh and slumps lower into the sofa.",
+      "Her eyes stay fixed on the floor, even when someone says her name.",
+      "He turns away from the group and walks slowly to the far end of the room.",
+      "She sits alone on the bench, her shoulders hunched and her hands still.",
+      "He answers every question with a flat, quiet voice, never looking up."
+    ]
+  },
+  {
+    "name": "unnerved",
+    "scenarios": [
+      "He jumps at the sound of a door clicking shut behind him.",
+      "Her hand trembles slightly as she reaches for the light switch.",
+      "He keeps looking over his shoulder, even though no one is there.",
+      "She grips the armrests of her chair until her knuckles turn white.",
+      "He stops mid-sentence and freezes, listening to a faint creak upstairs.",
+      "She backs away slowly from the window, her breath catching in her throat."
+    ]
+  },
+  {
+    "name": "unsettled",
+    "scenarios": [
+      "He rearranges the pens on his desk three times in one minute.",
+      "She keeps glancing at the clock, then at the door, then back at the clock.",
+      "He paces the kitchen floor, tracing the same path over and over.",
+      "She picks at a loose thread on her sweater, unable to focus on the book.",
+      "He checks the lock on the front door twice, then checks it again.",
+      "She sits down, stands up, and sits down again without saying a word."
+    ]
+  },
+  {
+    "name": "upset",
+    "scenarios": [
+      "She wipes at her eyes with the back of her hand, then turns away.",
+      "He slams the book shut and pushes it across the table.",
+      "Her voice cracks as she repeats the same sentence under her breath.",
+      "He stares at the spilled drink, his jaw tight and his fists clenched.",
+      "She bites her lip hard and blinks rapidly, refusing to meet anyone's gaze.",
+      "He walks out of the room without a word, leaving the door slightly ajar."
+    ]
+  },
+  {
+    "name": "valiant",
+    "scenarios": [
+      "He steps in front of the smaller child, shielding them with his own body.",
+      "She lifts the heavy beam off the trapped animal, grunting with effort.",
+      "He stands alone on the stage, voice steady, facing the jeering crowd.",
+      "She runs into the burning building without looking back at the others.",
+      "He drops the rope into the floodwater and pulls the stranger to safety.",
+      "She holds the flag high as she walks forward, even as others retreat."
+    ]
+  },
+  {
+    "name": "vengeful",
+    "scenarios": [
+      "She carefully sharpens the kitchen knife, glancing at the framed photo on the wall.",
+      "He rewrites the same email for the third time, deleting every polite word.",
+      "They collect every whisper from the office, filing each name in a mental ledger.",
+      "She lingers near his car each evening, noting the exact time he leaves.",
+      "He clicks through old social media posts, saving screenshots to a hidden folder.",
+      "They practice the precise words to say when the moment finally arrives."
+    ]
+  },
+  {
+    "name": "vibrant",
+    "scenarios": [
+      "Her laughter spills across the room, pulling strangers into her orbit.",
+      "He paints the fence in broad, sweeping strokes, humming a tune that has no name.",
+      "She dances in the rain without music, splashing puddles just to watch them shatter.",
+      "He gestures wildly while telling a story, nearly knocking over a glass of water.",
+      "She wears a dress the color of ripe oranges, and the whole sidewalk seems brighter.",
+      "He plants marigolds in every empty pot, his fingers stained with soil and joy."
+    ]
+  },
+  {
+    "name": "vigilant",
+    "scenarios": [
+      "He scans the crowd at the train station, cataloging each face in a single glance.",
+      "She pauses mid-step, her ears catching a sound that others did not hear.",
+      "He checks the lock on the back door twice before settling into his chair.",
+      "She watches the dog across the street from behind the curtain, not blinking.",
+      "He adjusts the rearview mirror again, even though the road behind is empty.",
+      "She listens to the floorboards creak upstairs, her hand frozen on the phone."
+    ]
+  },
+  {
+    "name": "vindictive",
+    "scenarios": [
+      "He smiles thinly as he forwards the private message to the entire department.",
+      "She notes the exact amount he owes her, adding a small, unspoken interest.",
+      "He waits until the applause dies down, then stands to ask the one question no one answers.",
+      "She posts the photo with a caption that looks innocent, but isn't.",
+      "He subtly moves her favorite mug to the very back of the highest shelf.",
+      "She mentions his failed project in passing, her voice sweet as syrup."
+    ]
+  },
+  {
+    "name": "vulnerable",
+    "scenarios": [
+      "She pulls the blanket up to her chin, peering at the dark doorway.",
+      "He speaks softly into the phone, his voice cracking on a single word.",
+      "She holds out her open palm, the paper note trembling between her fingers.",
+      "He sits on the edge of the bed, staring at his own hands as if they belong to someone else.",
+      "She removes her glasses and rubs her eyes, letting the silence fill the room.",
+      "He asks a simple question, then looks away before the answer comes."
+    ]
+  },
+  {
+    "name": "weary",
+    "scenarios": [
+      "He sinks into the chair and lets his head fall back, eyes half-closed.",
+      "She stares at the blinking cursor on the screen, her fingers motionless on the keyboard.",
+      "He climbs the three steps to the porch, each foot dragging a little more.",
+      "She holds the coffee cup with both hands, not drinking, just feeling the warmth.",
+      "He nods along to the conversation, but his gaze is fixed on a point far away.",
+      "She removes her shoes without untying them, too tired to bend down."
+    ]
+  },
+  {
+    "name": "worn_out",
+    "scenarios": [
+      "She collapses onto the couch the moment she walks through the door.",
+      "His eyelids droop as he stares blankly at the blinking cursor.",
+      "Every step toward the bed feels like wading through thick mud.",
+      "He forgets what he was about to say and just sighs.",
+      "She leans her forehead against the cold fridge door and doesn't move.",
+      "His arms hang limp at his sides after lifting the last box."
+    ]
+  },
+  {
+    "name": "worried",
+    "scenarios": [
+      "She keeps glancing at her phone, then at the clock on the wall.",
+      "He bites his thumbnail while pacing a short path in the hallway.",
+      "Her hand hovers over the doorknob, but she doesn't turn it.",
+      "He rereads the same text message for the fifth time.",
+      "She calls his office for the third time in an hour.",
+      "He checks the back seat of the car before getting in."
+    ]
+  },
+  {
+    "name": "worthless",
+    "scenarios": [
+      "She throws her half-finished drawing into the trash without looking.",
+      "He turns away from the group photo and mutters, 'Just delete it.'",
+      "She lets the compliment hang in the air and says nothing back.",
+      "He stares at his reflection in the dark window and slowly looks down.",
+      "She hands the trophy to a teammate and says, 'You keep it.'",
+      "He erases his name from the sign-up sheet and walks away."
+    ]
+  }
+]

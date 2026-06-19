@@ -1,0 +1,19 @@
+title: open-scouter
+description: Monitor and steer a served language model along the assistant axis.
+remote_theme: just-the-docs/just-the-docs
+
+color_scheme: dark
+search_enabled: true
+
+aux_links:
+  GitHub: https://github.com/Loke-60000/open-scouter
+aux_links_new_tab: true
+
+plugins:
+  - jekyll-remote-theme
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default

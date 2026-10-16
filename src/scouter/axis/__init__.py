@@ -11,8 +11,11 @@ from .generate import (
     ActivationExtractor,
     AxisGenerator,
     GenerationConfig,
+    TokenActivations,
+    build_catalog,
     compute_axis_from_activations,
     generate_axis,
+    render_chat,
 )
 from .loader import Axis, load_axis, save_axis
 
@@ -32,7 +35,10 @@ __all__ = [
     # generation
     "GenerationConfig",
     "ActivationExtractor",
+    "TokenActivations",
     "AxisGenerator",
+    "build_catalog",
     "generate_axis",
+    "render_chat",
     "compute_axis_from_activations",
 ]

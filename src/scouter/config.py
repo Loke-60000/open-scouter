@@ -46,6 +46,10 @@ class Settings(BaseSettings):
     # means no emotion monitoring. Monitoring needs no steering.
     emotions: str = ""
 
+    # Feature dictionary to load (a .npz produced by `scouter-features`). It is
+    # tied to one layer; loading it moves the monitor layer there.
+    features: str = ""
+
     # The residual-stream layer used for monitoring/steering. If <0 the axis
     # subsystem picks ``num_layers // 2`` once the model is known.
     target_layer: int = -1

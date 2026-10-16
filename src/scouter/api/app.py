@@ -24,6 +24,10 @@ from .schemas import (
     ChatMessageModel,
     EmotionsInfo,
     EmotionsLoadRequest,
+    FeatureHitModel,
+    FeatureInfo,
+    FeaturesInfo,
+    FeaturesLoadRequest,
     HealthResponse,
     MonitorRequest,
     SteeringModel,
@@ -137,6 +141,11 @@ def create_app(settings: Optional[Settings] = None) -> FastAPI:
             ),
             axis_monitor=monitor_model,
             emotion_monitor=result.emotion_profile,
+            feature_monitor=(
+                [FeatureHitModel(**h) for h in result.feature_profile]
+                if result.feature_profile is not None
+                else None
+            ),
         )
 
     def _stream_response(
@@ -226,9 +235,9 @@ def create_app(settings: Optional[Settings] = None) -> FastAPI:
     @app.post("/v1/monitor")
     async def monitor(req: MonitorRequest) -> dict:
         st = state()
-        if st.axis is None and st.emotions is None:
+        if st.axis is None and st.emotions is None and st.features is None:
             raise HTTPException(
-                status_code=400, detail="nothing to monitor; load an axis or emotions first"
+                status_code=400, detail="nothing to monitor; load an axis, emotions or features"
             )
         messages = _to_messages(req.messages)
         params = SamplingParams(max_tokens=req.max_tokens, temperature=req.temperature)
@@ -236,6 +245,7 @@ def create_app(settings: Optional[Settings] = None) -> FastAPI:
         return {
             "axis_monitor": result.monitor.to_dict() if result.monitor else None,
             "emotion_monitor": result.emotion_profile,
+            "feature_monitor": result.feature_profile,
         }
 
     def _emotions_info() -> EmotionsInfo:
@@ -257,5 +267,39 @@ def create_app(settings: Optional[Settings] = None) -> FastAPI:
         except Exception as exc:
             raise HTTPException(status_code=400, detail=f"failed to load emotions: {exc}") from exc
         return _emotions_info()
+
+    def _features_info() -> FeaturesInfo:
+        fd = state().features
+        if fd is None:
+            return FeaturesInfo(loaded=False)
+        return FeaturesInfo(loaded=True, count=len(fd), layer=fd.layer, labeled=len(fd.labels))
+
+    @app.get("/v1/features", response_model=FeaturesInfo)
+    async def get_features() -> FeaturesInfo:
+        return _features_info()
+
+    @app.post("/v1/features", response_model=FeaturesInfo)
+    async def post_features(req: FeaturesLoadRequest) -> FeaturesInfo:
+        st = state()
+        await run_in_threadpool(st.ensure_model)
+        try:
+            await run_in_threadpool(st.load_features, req.spec)
+        except Exception as exc:
+            raise HTTPException(status_code=400, detail=f"failed to load features: {exc}") from exc
+        return _features_info()
+
+    @app.get("/v1/features/{index}", response_model=FeatureInfo)
+    async def get_feature(index: int) -> FeatureInfo:
+        fd = state().features
+        if fd is None:
+            raise HTTPException(status_code=400, detail="no feature dictionary loaded")
+        if not 0 <= index < len(fd):
+            raise HTTPException(status_code=404, detail=f"feature {index} out of range")
+        return FeatureInfo(
+            index=index,
+            label=fd.label(index),
+            max_activation=float(fd.max_activations[index]),
+            clamp_coefficient=fd.clamp_coefficient(index),
+        )
 
     return app

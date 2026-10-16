@@ -33,6 +33,7 @@ dev = ["pytest>=7.4", "pytest-asyncio>=0.23", "ruff>=0.4", "mypy>=1.10"]
 scouter = "scouter.server:main"
 scouter-generate = "scouter.axis.generate:main"
 scouter-emotions = "scouter.emotions:main"
+scouter-features = "scouter.features:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
@@ -50,7 +51,7 @@ check_untyped_defs = true
 disallow_incomplete_defs = true
 # Heavy/optional backends ship no (or partial) stubs; don't fail on them.
 [[tool.mypy.overrides]]
-module = ["vllm", "vllm.*", "vllm_hook_plugins", "vllm_hook_plugins.*", "torch", "torch.*", "transformers", "transformers.*", "llama_cpp", "llama_cpp.*", "gguf", "huggingface_hub"]
+module = ["vllm", "vllm.*", "vllm_hook_plugins", "vllm_hook_plugins.*", "torch", "torch.*", "transformers", "transformers.*", "llama_cpp", "llama_cpp.*", "gguf", "huggingface_hub", "sse_starlette.*"]
 ignore_missing_imports = true
 
 [tool.pytest.ini_options]

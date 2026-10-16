@@ -20,8 +20,12 @@ On every request, `open-scouter` can:
 - **Emotions**: map text to emotions and steer the model's emotion, using the
   same activation-vector approach (see the transformer-circuits "Emotion
   Concepts" paper).
+- **Features**: learn a sparse-autoencoder dictionary of the model's own
+  features, read which fire, and clamp one on (as in Anthropic's "Scaling
+  Monosemanticity" Golden Gate Bridge demo).
 
-It also builds the axis (and emotion vectors) itself from any HuggingFace model,
+It also builds the axis, emotion vectors and feature dictionary itself from any
+HuggingFace model,
 so you do not need precomputed ones. Everything is behind an OpenAI-compatible
 HTTP API, in Docker.
 

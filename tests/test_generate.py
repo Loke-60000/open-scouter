@@ -86,6 +86,47 @@ def test_generation_config_validation():
         GenerationConfig(position="middle")
     with pytest.raises(ValueError):
         GenerationConfig(batch_size=0)
+    with pytest.raises(ValueError):
+        GenerationConfig(mean_start=-1)
+
+
+def test_masked_mean_full_and_offset():
+    torch = pytest.importorskip("torch")
+    from scouter.axis.generate import _masked_mean
+
+    # 1 layer, 1 sample, 4 tokens, 1 hidden dim; values 0,1,2,3
+    stacked = torch.tensor([[[[0.0], [1.0], [2.0], [3.0]]]])  # (1,1,4,1)
+    mask = torch.tensor([[True, True, True, True]])
+
+    full = _masked_mean(stacked, mask, mean_start=0)
+    assert full.shape == (1, 1, 1)
+    assert full[0, 0, 0].item() == pytest.approx(1.5)  # mean of 0..3
+
+    # skip the first 2 tokens -> mean of {2,3} = 2.5
+    offset = _masked_mean(stacked, mask, mean_start=2)
+    assert offset[0, 0, 0].item() == pytest.approx(2.5)
+
+
+def test_masked_mean_offset_falls_back_when_too_short():
+    torch = pytest.importorskip("torch")
+    from scouter.axis.generate import _masked_mean
+
+    stacked = torch.tensor([[[[2.0], [4.0]]]])  # (1,1,2,1), values 2,4
+    mask = torch.tensor([[True, True]])
+    # mean_start past the end -> fall back to full mean = 3.0
+    out = _masked_mean(stacked, mask, mean_start=10)
+    assert out[0, 0, 0].item() == pytest.approx(3.0)
+
+
+def test_masked_mean_respects_padding():
+    torch = pytest.importorskip("torch")
+    from scouter.axis.generate import _masked_mean
+
+    # second token is padding -> mean is just the first token's value
+    stacked = torch.tensor([[[[5.0], [99.0]]]])
+    mask = torch.tensor([[True, False]])
+    out = _masked_mean(stacked, mask, mean_start=0)
+    assert out[0, 0, 0].item() == pytest.approx(5.0)
 
 
 @pytest.mark.parametrize("ext", [".npz", ".npy", ".pt"])

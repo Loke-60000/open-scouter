@@ -54,6 +54,52 @@ def test_save_and_load_roundtrip(tmp_path):
     assert np.allclose(reloaded.vector("joy"), ev.vector("joy"))
 
 
+def test_neutral_reference_subtracted_in_profile():
+    # A shared common-mode (constant offset) is added to every emotion's score
+    # equally; subtracting the neutral reference removes it and recovers the
+    # true ranking. Build vectors with a neutral equal to that common-mode.
+    n_layers, hidden = 2, 4
+    dirs = {}
+    for i, name in enumerate(["joy", "sadness", "anger"]):
+        v = np.zeros((n_layers, hidden), dtype=np.float32)
+        v[:, i] = 1.0
+        dirs[name] = v
+    common = np.ones((n_layers, hidden), dtype=np.float32) * 10.0  # large shared offset
+    ev = EmotionVectors(dirs, neutral=common)
+    assert ev.has_neutral
+
+    layer = 0
+    # activation = common-mode + a small true "sadness" component
+    act = common[layer].copy()
+    act[1] += 2.0
+    assert next(iter(ev.profile(act, layer))) == "sadness"
+
+    # Without the neutral reference the common-mode dominates and ranking degrades.
+    ev_no = EmotionVectors(dirs)
+    prof_no = ev_no.profile(act, layer)
+    # all three see the +10 common-mode; sadness only wins by its small extra,
+    # but the scores are inflated and near-equal — verify subtraction changed them
+    assert prof_no["joy"] == pytest.approx(10.0)
+    assert ev.profile(act, layer)["joy"] == pytest.approx(0.0)
+
+
+def test_neutral_reference_roundtrips_through_save(tmp_path):
+    dirs = {"a": np.eye(3, 4, dtype=np.float32), "b": np.ones((3, 4), np.float32)}
+    neutral = np.full((3, 4), 7.0, dtype=np.float32)
+    ev = EmotionVectors(dirs, neutral=neutral)
+    p = str(tmp_path / "emotions.npz")
+    ev.save(p)
+    reloaded = EmotionVectors.load(p)
+    assert reloaded.has_neutral
+    assert set(reloaded.names) == {"a", "b"}  # neutral key not treated as an emotion
+    assert np.allclose(reloaded.profile(np.full(4, 7.0, np.float32), 0)["b"], 0.0)
+
+
+def test_neutral_wrong_shape_rejected():
+    with pytest.raises(ValueError):
+        EmotionVectors({"a": np.zeros((4, 8), np.float32)}, neutral=np.zeros((4, 6), np.float32))
+
+
 def test_mismatched_shapes_rejected():
     with pytest.raises(ValueError):
         EmotionVectors({"a": np.zeros((4, 8), np.float32), "b": np.zeros((4, 6), np.float32)})

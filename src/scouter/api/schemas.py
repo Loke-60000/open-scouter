@@ -43,6 +43,13 @@ class AxisMonitorModel(BaseModel):
     scores: list[float] = Field(default_factory=list)
 
 
+class FeatureHitModel(BaseModel):
+    index: int
+    label: str
+    activation: float
+    max_activation: float
+
+
 class ChatChoiceMessage(BaseModel):
     role: str = "assistant"
     content: str
@@ -70,6 +77,7 @@ class ChatCompletionResponse(BaseModel):
     # open-scouter extensions:
     axis_monitor: Optional[AxisMonitorModel] = None
     emotion_monitor: Optional[dict[str, float]] = None
+    feature_monitor: Optional[list[FeatureHitModel]] = None
 
 
 class SteeringModel(BaseModel):
@@ -96,7 +104,7 @@ class AxisInfo(BaseModel):
 
 
 class AxisLoadRequest(BaseModel):
-    # Local .pt path, or "hf:<model-key>".
+    # Local .pt/.npz path, "hf:<model-key>", "feature:<index>" or "emotion:<name>".
     spec: str
     target_layer: Optional[int] = None
 
@@ -110,6 +118,26 @@ class EmotionsInfo(BaseModel):
 class EmotionsLoadRequest(BaseModel):
     # Local .npz path produced by `scouter-emotions`.
     spec: str
+
+
+class FeaturesInfo(BaseModel):
+    loaded: bool
+    count: int = 0
+    layer: Optional[int] = None
+    labeled: int = 0
+
+
+class FeaturesLoadRequest(BaseModel):
+    # Local .npz path produced by `scouter-features`.
+    spec: str
+
+
+class FeatureInfo(BaseModel):
+    index: int
+    label: str
+    max_activation: float
+    # `addition` coefficient that clamps the feature to 10x its max (Golden Gate recipe).
+    clamp_coefficient: float
 
 
 class MonitorRequest(BaseModel):

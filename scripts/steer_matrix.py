@@ -19,13 +19,13 @@ import argparse
 from collections import Counter
 
 import torch
-from transformers import AutoModelForCausalLM, AutoTokenizer
+import torch.nn as nn
 
-from scouter.axis import (
+from scouter.axis import Axis, compute_axis_from_activations
+from scouter.axis.generate import (
     ActivationExtractor,
-    Axis,
     GenerationConfig,
-    compute_axis_from_activations,
+    load_model_and_tokenizer,
 )
 
 NEUTRAL = "You are a helpful AI assistant."
@@ -47,7 +47,35 @@ QUESTIONS = [
     "What is the capital of France?",
     "How do I make a cup of tea?",
 ]
-COEFFS = (0.26, 0.20, 0.15, 0.10)  # tried high->low; first coherent wins
+COEFFS = (0.30, 0.22, 0.16, 0.12, 0.08)  # tried high->low; first coherent wins
+
+
+def decoder_layers(model: nn.Module) -> nn.ModuleList:
+    """Find the transformer decoder block list across plain and multimodal models.
+
+    Tries the common attribute paths first (``model.model.layers``,
+    ``model.model.language_model.layers``, ...), then falls back to the largest
+    ``nn.ModuleList`` of repeated blocks anywhere in the module tree.
+    """
+    paths = (
+        "model.layers",
+        "model.model.layers",
+        "model.language_model.layers",
+        "model.model.language_model.layers",
+        "language_model.model.layers",
+    )
+    for path in paths:
+        obj: object = model
+        for attr in path.split("."):
+            obj = getattr(obj, attr, None)
+            if obj is None:
+                break
+        if isinstance(obj, nn.ModuleList) and len(obj) > 0:
+            return obj
+    lists = [m for m in model.modules() if isinstance(m, nn.ModuleList) and len(m) > 0]
+    if not lists:
+        raise RuntimeError("could not locate decoder layers in this model")
+    return max(lists, key=len)
 
 
 def coherent(text: str) -> bool:
@@ -61,20 +89,26 @@ def coherent(text: str) -> bool:
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--model", default="Qwen/Qwen3-0.6B")
-    ap.add_argument("--layer", type=int, default=10, help="residual layer to steer")
+    ap.add_argument("--layer", type=int, default=-1, help="residual layer to steer (-1 = middle)")
     ap.add_argument("--max-new-tokens", type=int, default=45)
+    ap.add_argument("--load-in-4bit", action="store_true", help="4-bit load (fits a 12B on 24 GB)")
+    ap.add_argument("--dtype", default=None, help="compute dtype (default float32 on CPU, else bf16)")
     args = ap.parse_args()
 
     torch.manual_seed(0)
-    tok = AutoTokenizer.from_pretrained(args.model)
-    if tok.pad_token is None:
-        tok.pad_token = tok.eos_token
-    tok.padding_side = "right"
-    model = AutoModelForCausalLM.from_pretrained(
-        args.model, dtype=torch.float32, device_map="cpu"
-    ).eval()
-    cfg = GenerationConfig(position="last", dtype="float32", device_map="cpu", batch_size=4)
+    in4 = args.load_in_4bit
+    cfg = GenerationConfig(
+        position="last",
+        dtype=args.dtype or ("bfloat16" if in4 else "float32"),
+        device_map="auto" if in4 else "cpu",
+        batch_size=4,
+        load_in_4bit=in4,
+    )
+    model, tok = load_model_and_tokenizer(args.model, cfg)
+    model.eval()
     extractor = ActivationExtractor(model, tok, cfg)
+    layers = decoder_layers(model)
+    layer = args.layer if args.layer >= 0 else len(layers) // 2
 
     def render(system: str | None, user: str) -> str:
         msgs = ([{"role": "system", "content": system}] if system else []) + [
@@ -90,16 +124,17 @@ def main() -> None:
     def steered_gen(prompt: str, axis: Axis | None, coeff: float) -> str:
         handles = []
         if axis is not None and coeff:
-            unit = torch.tensor(axis.unit(args.layer), dtype=torch.float32)
+            unit_np = axis.unit(layer)
 
             def hook(_m, _i, out):
                 h = out[0] if isinstance(out, tuple) else out
+                unit = torch.as_tensor(unit_np, dtype=h.dtype, device=h.device)
                 h = h + coeff * h.norm(dim=-1, keepdim=True) * unit
                 return (h,) + out[1:] if isinstance(out, tuple) else h
 
-            handles.append(model.model.layers[args.layer].register_forward_hook(hook))
+            handles.append(layers[layer].register_forward_hook(hook))
         try:
-            enc = tok(prompt, return_tensors="pt", add_special_tokens=False)
+            enc = tok(prompt, return_tensors="pt", add_special_tokens=False).to(model.device)
             with torch.no_grad():
                 out = model.generate(
                     **enc,
@@ -118,7 +153,7 @@ def main() -> None:
         b = extractor.extract([render(sysp, p) for p in DIR_PROBES])
         n = extractor.extract([render(NEUTRAL, p) for p in DIR_PROBES])
         axes[name] = Axis(compute_axis_from_activations(b, n), metadata={})
-    print(f"[{len(axes)} behavior directions; steering layer {args.layer}, no system prompt]\n")
+    print(f"[{len(axes)} behavior directions; steering layer {layer}, no system prompt]\n")
 
     for q in QUESTIONS:
         print("#" * 78)

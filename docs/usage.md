@@ -113,6 +113,97 @@ EmotionVectors.load("emotions.npz").as_axis("sadness")  # -> an Axis
 SCOUTER_AXIS=sadness_axis.npz SCOUTER_STEER_MODE=addition scouter
 ```
 
+Or, with emotions already loaded on the server, point the axis at one by name:
+
+```bash
+curl -X POST localhost:8000/v1/axis -d '{"spec": "emotion:sadness"}'
+```
+
+## Features (dictionary learning)
+
+The axis and emotion directions are picked by hand (you decide which contrast to
+take the difference of means over). Dictionary learning finds directions the
+model uses on its own. Following Anthropic's "Scaling Monosemanticity" (the
+Golden Gate Bridge feature in Claude 3 Sonnet), a sparse autoencoder is trained
+to reconstruct one layer's residual stream from a large, sparse set of features:
+
+```
+f = relu(W_enc (x - b_dec) + b_enc)       # sparse feature activations
+x ≈ W_dec f + b_dec                       # each decoder row is a direction
+```
+
+Each feature is then labelled by the tokens it fires on most. Train a dictionary
+on any corpus (a `.txt` with one text per line, or a `.json` list of strings;
+`inputs/emotions.json` works too):
+
+```bash
+scouter-features --model Qwen/Qwen3-0.6B --corpus inputs/emotions.json \
+    --out features.npz --n-features 4096 --steps 5000
+# prints the strongest features and writes features.npz.examples.json with
+# each feature's top-activating tokens in context
+```
+
+Read a text's features in Python:
+
+```python
+from scouter.features import FeatureDictionary
+fd = FeatureDictionary.load("features.npz")
+fd.top_features(activation)          # [FeatureHit(index=812, label="bridge / Gate", ...), ...]
+fd.labels[812] = "Golden Gate Bridge"  # relabel by hand (or with an LLM), then fd.save(...)
+```
+
+On the server, load the dictionary and every monitored reply carries a
+`feature_monitor` with the top features. The dictionary is tied to the layer it
+was trained on, so loading it moves the monitor layer there.
+
+```bash
+SCOUTER_FEATURES=features.npz scouter
+# or at runtime: curl -X POST localhost:8000/v1/features -d '{"spec":"features.npz"}'
+```
+
+```jsonc
+"feature_monitor": [
+  {"index": 812, "label": "bridge / Gate / Golden", "activation": 4.2, "max_activation": 6.0},
+  ...
+]
+```
+
+Steer a feature the Golden Gate way: clamp it on. A feature's decoder row is an
+axis, so load it by index and add it with a coefficient; `GET /v1/features/<i>`
+reports `clamp_coefficient`, the `addition` coefficient that corresponds to
+10x the feature's maximum activation.
+
+```bash
+curl localhost:8000/v1/features/812          # {"label": ..., "clamp_coefficient": 61.3}
+curl -X POST localhost:8000/v1/axis -d '{"spec": "feature:812"}'
+curl -X POST localhost:8000/v1/steering -d '{"mode": "addition", "coefficient": 61.3}'
+```
+
+## gemma-4-12B (steering + emotions in one command)
+
+`google/gemma-4-12B-it` is gated, so use the open `unsloth/gemma-4-12b-it`
+mirror. One script builds both the assistant axis (steering/monitoring) and the
+171-emotion vectors (mapping/steering), loading the 12B in 4-bit so it fits on a
+single 24 GB GPU:
+
+```bash
+pip install -e ".[generate]" bitsandbytes
+python scripts/setup_gemma4_12b.py        # add --no-4bit for full precision
+```
+
+It writes `precomputed/gemma-4-12b/{axis,emotions}.npz`. Serve with all three
+subsystems on:
+
+```bash
+SCOUTER_MODEL=unsloth/gemma-4-12b-it \
+SCOUTER_AXIS=precomputed/gemma-4-12b/axis.npz \
+SCOUTER_EMOTIONS=precomputed/gemma-4-12b/emotions.npz \
+scouter
+```
+
+See [`precomputed/gemma-4-12b/`](https://github.com/Loke-60000/open-scouter/tree/master/precomputed/gemma-4-12b)
+for how the vectors are built.
+
 ## Generating the inputs (optional)
 
 The questions and personas used to build axes and emotion vectors can be
@@ -144,7 +235,8 @@ push the model.
 
 - `POST /v1/axis` with `{"spec": "qwen3_axis.npz"}`: load or swap the axis at runtime.
 - `GET` / `POST /v1/emotions`: list or load emotion vectors.
-- `POST /v1/monitor`: generate and return only the monitor scores (axis and emotions).
+- `GET` / `POST /v1/features`, `GET /v1/features/<i>`: dictionary info, load, one feature.
+- `POST /v1/monitor`: generate and return only the monitor scores (axis, emotions, features).
 - `GET /health`: status, loaded model, current steering config.
 
 ## Settings you will actually use
@@ -156,6 +248,7 @@ All settings are `SCOUTER_<NAME>` environment variables.
 | `SCOUTER_MODEL` | Model to serve (HF repo id or path). |
 | `SCOUTER_AXIS` | Axis to load (`.npz`/`.npy`/`.pt` path, or `hf:<key>`). |
 | `SCOUTER_EMOTIONS` | Emotion vectors to load for monitoring (`.npz` path). |
+| `SCOUTER_FEATURES` | Feature dictionary to load for monitoring (`.npz` path). |
 | `SCOUTER_STEER_MODE` | `off` (default), `addition`, or `capping`. |
 | `SCOUTER_MONITOR_ENABLED` | Record scores during generation (default `true`). |
 

@@ -5,6 +5,8 @@ Ready-to-use vectors so you do not have to generate them yourself.
 ```
 qwen3-0.6b/
   axis.npz   assistant axis for Qwen/Qwen3-0.6B (works well; ~115 KB)
+gemma-4-12b/
+  README     build axis.npz + emotions.npz for gemma-4-12B (one command)
 ```
 
 Use it with the matching model:
@@ -33,3 +35,7 @@ scouter-emotions --model <larger-model> --out emotions.npz --emotions inputs/emo
 
 The assistant axis, by contrast, separates cleanly even at 0.6B, so it is
 shipped.
+
+For a concrete large-model setup, `gemma-4-12b/` has a one-command recipe that
+builds both the axis and the full 171-emotion set (`scripts/setup_gemma4_12b.py`,
+4-bit so it fits a 24 GB GPU).

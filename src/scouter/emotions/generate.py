@@ -61,16 +61,7 @@ def build_emotion_vectors(
     out to remove confounds. Mirrors the "Emotion Concepts" paper's recipe.
     """
 
-    def render(text: str) -> str:
-        msgs = [{"role": "user", "content": text}]
-        tok = extractor._tokenizer  # noqa: SLF001 - extractor owns the tokenizer
-        try:
-            return tok.apply_chat_template(
-                msgs, add_generation_prompt=True, tokenize=False, enable_thinking=False
-            )
-        except TypeError:
-            return tok.apply_chat_template(msgs, add_generation_prompt=True, tokenize=False)
-
+    render = extractor.render_user
     per_emotion: dict[str, FloatArray] = {}
     for emo in emotions:
         if not emo.scenarios:
@@ -81,11 +72,14 @@ def build_emotion_vectors(
     grand_mean = np.mean(np.stack(list(per_emotion.values())), axis=0)
     directions = {name: (mean - grand_mean) for name, mean in per_emotion.items()}
 
+    neutral_ref: FloatArray | None = None
     if neutral_prompts:
         neutral = extractor.extract([render(s) for s in neutral_prompts])
         directions = _remove_principal_components(directions, neutral)
+        # Keep the neutral mean so profile() can strip the common-mode at query time.
+        neutral_ref = neutral.mean(axis=0)
 
-    return EmotionVectors(directions)
+    return EmotionVectors(directions, neutral=neutral_ref)
 
 
 def generate_emotion_vectors(
@@ -118,10 +112,27 @@ def main() -> None:
     ap.add_argument("--no-orthogonalize", action="store_true", help="skip neutral-PC removal")
     ap.add_argument("--dtype", default="bfloat16")
     ap.add_argument("--device-map", default="auto")
+    ap.add_argument(
+        "--load-in-4bit",
+        action="store_true",
+        help="load weights in 4-bit (bitsandbytes NF4); fits a 12B model on a 24 GB GPU",
+    )
+    ap.add_argument(
+        "--mean-start",
+        type=int,
+        default=50,
+        help="average residual states from this token onward (paper recipe: 50)",
+    )
     args = ap.parse_args()
 
     emotions = load_emotions_json(args.emotions) if args.emotions else DEFAULT_EMOTIONS
-    config = GenerationConfig(position="mean", dtype=args.dtype, device_map=args.device_map)
+    config = GenerationConfig(
+        position="mean",
+        dtype=args.dtype,
+        device_map=args.device_map,
+        load_in_4bit=args.load_in_4bit,
+        mean_start=args.mean_start,
+    )
     vectors = generate_emotion_vectors(
         args.model,
         emotions=emotions,

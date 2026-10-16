@@ -29,8 +29,14 @@ It can also map and steer emotions, using the same activation-vector approach
 on per-emotion directions (see the transformer-circuits "Emotion Concepts"
 paper, https://transformer-circuits.pub/2026/emotions/index.html).
 
-It generates the axis and emotion vectors itself from any HuggingFace model, so
-no precomputed files are required. Everything is behind one OpenAI-compatible
+Beyond hand-picked directions, it learns a dictionary of the model's own
+features with a sparse autoencoder, the method behind Anthropic's
+[Scaling Monosemanticity](https://transformer-circuits.pub/2024/scaling-monosemanticity/)
+and its Golden Gate Bridge feature: label features by the tokens they fire on,
+see which fire on each reply, and clamp one on to steer.
+
+It generates the axis, emotion vectors and feature dictionary itself from any
+HuggingFace model, so no precomputed files are required. Everything is behind one OpenAI-compatible
 HTTP API, in Docker, on a GPU (vLLM with the IBM vLLM-Hook plugin).
 
 ## Documentation
@@ -69,6 +75,8 @@ pip install -e ".[generate]"
 scouter-generate --model <model> --out axis.npz
 # emotion vectors (171 emotions; use a capable model for clean separation)
 scouter-emotions --model <model> --out emotions.npz --emotions inputs/emotions.json
+# sparse-autoencoder feature dictionary at the middle layer
+scouter-features --model <model> --corpus inputs/emotions.json --out features.npz
 python scripts/behavior_matrix.py --model Qwen/Qwen3-0.6B   # monitor across behaviors
 ```
 

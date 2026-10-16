@@ -27,3 +27,10 @@ venv/
 
 # OS
 .DS_Store
+
+# Large generated artefacts: emotion_stories/ is the per-emotion shard cache that
+# generate_emotion_stories.py --assemble flattens into inputs/emotions.json;
+# _ckpt/ holds resumable activation shards; the 12B emotions.npz is >100 MB.
+inputs/emotion_stories/
+precomputed/**/_ckpt/
+precomputed/gemma-4-12b/emotions.npz

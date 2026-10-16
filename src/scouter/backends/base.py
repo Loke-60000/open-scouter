@@ -51,6 +51,7 @@ class GenerationResult:
     # Filled in by the server from monitor_activations:
     monitor: Optional[MonitorTrace] = None              # assistant-axis trace
     emotion_profile: Optional[dict[str, float]] = None  # top emotions
+    feature_profile: Optional[list[dict]] = None        # top dictionary features
 
 
 @dataclass

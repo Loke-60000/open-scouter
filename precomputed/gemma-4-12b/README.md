@@ -1,7 +1,8 @@
 # gemma-4-12b vectors
 
-Steering and emotion-mapping vectors for **gemma-4-12B**. They are not checked
-in (a 12B axis is large and the model is gated), but one command builds both:
+Steering and emotion-mapping vectors for **gemma-4-12B**. `axis.npz` is checked
+in; `emotions.npz` (about 120 MB) is too large for GitHub, but one command
+builds both:
 
 ```bash
 pip install -e ".[generate]" bitsandbytes

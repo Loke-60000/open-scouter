@@ -46,9 +46,6 @@ relative to the polite baseline:
 - The single `frustrated` direction and the 5-emotion frustration family move
   together — the signal is robust, not one noisy vector.
 
-See `plots/frustration_buildup.png` (left: raw per-turn projection, impossible vs
-control; right: the treatment − control gap).
-
 ## Interpretation
 
 gemma-4-12B doesn't *act* frustrated — it keeps giving calm, correct refusals —

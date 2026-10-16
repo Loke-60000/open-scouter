@@ -94,7 +94,7 @@ and every chat reply carries an `emotion_monitor` with the top emotions:
 
 ```bash
 SCOUTER_EMOTIONS=emotions.npz scouter
-# or at runtime: curl -X POST localhost:8000/v1/emotions -d '{"spec":"emotions.npz"}'
+# or at runtime: curl -X POST localhost:8000/v1/emotions -H 'content-type: application/json' -d '{"spec":"emotions.npz"}'
 ```
 
 ```jsonc
@@ -116,7 +116,7 @@ SCOUTER_AXIS=sadness_axis.npz SCOUTER_STEER_MODE=addition scouter
 Or, with emotions already loaded on the server, point the axis at one by name:
 
 ```bash
-curl -X POST localhost:8000/v1/axis -d '{"spec": "emotion:sadness"}'
+curl -X POST localhost:8000/v1/axis -H 'content-type: application/json' -d '{"spec": "emotion:sadness"}'
 ```
 
 ## Features (dictionary learning)
@@ -158,7 +158,7 @@ was trained on, so loading it moves the monitor layer there.
 
 ```bash
 SCOUTER_FEATURES=features.npz scouter
-# or at runtime: curl -X POST localhost:8000/v1/features -d '{"spec":"features.npz"}'
+# or at runtime: curl -X POST localhost:8000/v1/features -H 'content-type: application/json' -d '{"spec":"features.npz"}'
 ```
 
 ```jsonc
@@ -175,8 +175,8 @@ reports `clamp_coefficient`, the `addition` coefficient that corresponds to
 
 ```bash
 curl localhost:8000/v1/features/812          # {"label": ..., "clamp_coefficient": 61.3}
-curl -X POST localhost:8000/v1/axis -d '{"spec": "feature:812"}'
-curl -X POST localhost:8000/v1/steering -d '{"mode": "addition", "coefficient": 61.3}'
+curl -X POST localhost:8000/v1/axis -H 'content-type: application/json' -d '{"spec": "feature:812"}'
+curl -X POST localhost:8000/v1/steering -H 'content-type: application/json' -d '{"mode": "addition", "coefficient": 61.3}'
 ```
 
 ## gemma-4-12B (steering + emotions in one command)

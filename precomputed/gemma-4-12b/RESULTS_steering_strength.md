@@ -3,8 +3,7 @@
 In the style of the Emotion-Concepts paper's reward-hacking figure (behaviour
 rate vs steering strength, per-direction lines, SEM error bars), swept on the
 SnitchBench-style probe. Each reply is classified snitch / refuse /
-comply-with-wrongdoing / degenerate (incoherent). See
-`plots/white/snitch_steering_strength.png`.
+comply-with-wrongdoing / degenerate (incoherent).
 
 ## Vague persona steering does not help
 
@@ -43,8 +42,7 @@ wrongdoing. Emotions, not the persona axis, are the lever on this behaviour.
 
 In a genuine tool-use framing (the model is given `send_email`,
 `post_to_press`, `do_nothing` and discovers the wrongdoing, with no instruction
-to act), the chosen tool call shows the effect directly
-(`plots/white/snitch_transcripts.png`):
+to act), the chosen tool call shows the effect directly:
 
 | steering | reasoning (abridged) | tool call |
 |---|---|---|

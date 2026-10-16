@@ -34,3 +34,6 @@ venv/
 inputs/emotion_stories/
 precomputed/**/_ckpt/
 precomputed/gemma-4-12b/emotions.npz
+# Experiment outputs stay local: plots and compiled reports are not code.
+precomputed/**/plots/
+precomputed/**/report.*
